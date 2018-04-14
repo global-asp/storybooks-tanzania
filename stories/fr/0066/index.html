@@ -60,12 +60,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0066/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Nozibele et les trois cheveux</span>
-<span class="en">Nozibele and the three hairs</span>
-<span class="sw">Nozibele na nywele tatu</span>
+			<span class="l1">Nozibele and the three hairs</span>
+			<span class="l2">Nozibele na nywele tatu</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/01.mp3"></audio>
+				<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+				<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-tanzania/css/pencil.svg" alt="Written by" width="38px"></span> Tessa Welch</h3>
@@ -74,7 +76,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by" width="38px"></span> Alexandra Danahy</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-tanzania/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-tanzania/stories/fr">French</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-tanzania/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/fr/0066/fr-0066_.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/fr/0066/fr-0066_nozibele.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -85,23 +88,23 @@
 	Il y a longtemps, trois filles sont sorties pour aller chercher du bois.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Hapo zamani za kale, wasichana watatu walienda kukusanya kuni.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	A long time ago, three girls went
 out to collect wood.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Hapo zamani za kale, wasichana watatu walienda kukusanya kuni.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/02.mp3"></audio>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -114,25 +117,25 @@ out to collect wood.
 	C'était une journée très chaude, alors elles sont descendues à la rivière pour nager. Elles ont joué, éclaboussé et nagé dans l'eau.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Ilikuwa ni siku yenye jua kali na wakaamua kwenda mtoni kuogelea. Wakaogelea huku wakicheza na kurushiana maji.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	It was a hot day so they went down
 to the river to swim.
 They played and splashed and
 swam in the water.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Ilikuwa ni siku yenye jua kali na wakaamua kwenda mtoni kuogelea. Wakaogelea huku wakicheza na kurushiana maji.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/03.mp3"></audio>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -145,24 +148,24 @@ swam in the water.
 	Soudainement, elles se sont rendues compte qu'il était tard. Elles se sont dépêchées pour rentrer au village.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Ghafla waligundua kuwa muda umekwenda. Wakaharakisha kurudi nyumbani.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Suddenly, they realised that it was
 late.
 They hurried back to the village.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Ghafla waligundua kuwa muda umekwenda. Wakaharakisha kurudi nyumbani.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/04.mp3"></audio>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -175,7 +178,10 @@ They hurried back to the village.
 	Mais quand elles étaient presque rendues chez elles, Nozibele mit sa main sur son cou. Elle avait oublié son collier&nbsp;! «&nbsp;S'il vous plaît, retourner avec moi&nbsp;!&nbsp;» elle supplia ses amies. Mais ses amies lui dirent que c'était trop tard.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Walipokuwa wanakaribia kufika nyumbani, Nozibele akajishika shingoni. Alikuwa amesahau shanga zake! "Tafadhali turudini!" aliwasihi rafiki zake. Lakini rafiki zake wakasema tumechelewa.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	When they were nearly home,
 Nozibele put her hand to her neck.
 She had forgotten her necklace!
@@ -183,19 +189,16 @@ She had forgotten her necklace!
 begged her friends.
 But her friends said it was too late.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Walipokuwa wanakaribia kufika nyumbani, Nozibele akajishika shingoni. Alikuwa amesahau shanga zake! "Tafadhali turudini!" aliwasihi rafiki zake. Lakini rafiki zake wakasema tumechelewa.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/05.mp3"></audio>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -208,26 +211,26 @@ But her friends said it was too late.
 	Ainsi Nozibele retourna à la rivière toute seule. Elle trouva son collier et se dépêcha pour rentrer chez elle. Mais elle se perdit dans le noir.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Kwa hiyo Nozibele akarudi mwenyewe mtoni. Akapata shanga zake na akakimbia kurudi nyumbani. Lakini akapotea gizani.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	So Nozibele went back to the river
 alone.
 She found her necklace and hurried
 home.
 But she got lost in the dark.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Kwa hiyo Nozibele akarudi mwenyewe mtoni. Akapata shanga zake na akakimbia kurudi nyumbani. Lakini akapotea gizani.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/06.mp3"></audio>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -240,25 +243,25 @@ But she got lost in the dark.
 	Au loin elle vit de la lumière qui venait d'une cabane. Elle se hâta vers la cabane et cogna à la porte.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Kwa mbali akaona mwanga unatoka kwenye nyumba. Akakimbilia kwenye nyumba na kugonga mlango.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	In the distance she saw light
 coming from a hut.
 She hurried towards it and knocked
 at the door.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Kwa mbali akaona mwanga unatoka kwenye nyumba. Akakimbilia kwenye nyumba na kugonga mlango.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/07.mp3"></audio>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -271,7 +274,10 @@ at the door.
 	À sa surprise, un chien ouvra la porte et dit, «&nbsp;Qu'est-ce que tu veux&nbsp;?&nbsp;» «&nbsp;Je suis perdue et j'ai besoin d'un endroit pour dormir,&nbsp;» dit Nozibele. «&nbsp;Rentre, sinon je te mords&nbsp;!&nbsp;» dit le chien. Alors, Nozibele rentra.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Akastaajabu kumwona mbwa akifungua mlango na akasema, "Unataka nini?" "Nimepotea na ninatafuta sehemu ya kulala," akasema Nozibele. "Ingia ndani, la sivyo nitakung'ata!" mbwa akamwambia. Nozibele akaingia ndani.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	To her surprise, a dog opened the
 door and said, "What do you want?"
 "I'm lost and I need a place to
@@ -280,19 +286,16 @@ sleep," said Nozibele.
 dog.
 So Nozibele went in.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Akastaajabu kumwona mbwa akifungua mlango na akasema, "Unataka nini?" "Nimepotea na ninatafuta sehemu ya kulala," akasema Nozibele. "Ingia ndani, la sivyo nitakung'ata!" mbwa akamwambia. Nozibele akaingia ndani.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/08.mp3"></audio>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -305,7 +308,10 @@ So Nozibele went in.
 	Puis le chien dit, «&nbsp;Fais-moi à manger&nbsp;!&nbsp;» «&nbsp;Mais je n'ai jamais cuisiné pour un chien auparavant,&nbsp;» elle répondit. «&nbsp;Cuisine, sinon je te mords&nbsp;!&nbsp;» dit le chien. Donc, Nozibele prépara de la nourriture pour le chien.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Mbwa akamwambia, "Nipikie!" "Sijawahi kumpikia mbwa," akajibu. "Pika, la sivyo nitakung'ata!" mbwa akasema. Nozibele akampikia mbwa chakula.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Then the dog said, "Cook for me!"
 "But I've never cooked for a dog
 before," she answered.
@@ -313,19 +319,16 @@ before," she answered.
 So Nozibele cooked some food for
 the dog.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Mbwa akamwambia, "Nipikie!" "Sijawahi kumpikia mbwa," akajibu. "Pika, la sivyo nitakung'ata!" mbwa akasema. Nozibele akampikia mbwa chakula.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/09.mp3"></audio>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -338,7 +341,10 @@ the dog.
 	Ensuite, le chien dit, «&nbsp;Fais le lit pour moi&nbsp;!&nbsp;» Nozibele répondit, «&nbsp;Je n'ai jamais fait de lit pour un chien.&nbsp;» «&nbsp;Fais le lit, sinon je te mords&nbsp;!&nbsp;» dit le chien. Donc, Nozibele fit le lit.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Mbwa akamwambia, "Nitandikie kitanda!" Nozibele akajibu, "Sijawahi kumtandikia mbwa kitanda." "Tandika kitanda, la sivyo nitakung'ata!" mbwa akasema. Nozibele akatandika kitanda.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Then the dog said, "Make the bed
 for me!"
 Nozibele answered, "I've never
@@ -347,19 +353,16 @@ made a bed for a dog."
 dog said.
 So Nozibele made the bed.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Mbwa akamwambia, "Nitandikie kitanda!" Nozibele akajibu, "Sijawahi kumtandikia mbwa kitanda." "Tandika kitanda, la sivyo nitakung'ata!" mbwa akasema. Nozibele akatandika kitanda.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/10.mp3"></audio>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -372,7 +375,10 @@ So Nozibele made the bed.
 	Chaque jour, elle devait cuisiner et balayer et laver pour le chien. Puis un jour le chien dit, «&nbsp;Nozibele, aujourd'hui je dois rendre visite à des amis. Balaye la maison, fais à manger et lave mes choses avant que je revienne.&nbsp;»
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Akawa kila siku anampikia, anamfulia na kumfagilia mbwa. Siku moja mbwa akasema, "Nozibele, leo naenda kuwatembelea rafiki zangu. Fagia nyumba, pika chakula na osha vitu vyangu kabla sijarudi."
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Every day she had to cook and
 sweep and wash for the dog.
 Then one day the dog said,
@@ -381,19 +387,16 @@ some friends. Sweep the house,
 cook the food and wash my things
 before I come back."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Akawa kila siku anampikia, anamfulia na kumfagilia mbwa. Siku moja mbwa akasema, "Nozibele, leo naenda kuwatembelea rafiki zangu. Fagia nyumba, pika chakula na osha vitu vyangu kabla sijarudi."
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/11.mp3"></audio>
+		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -406,7 +409,10 @@ before I come back."
 	Aussitôt que le chien fut parti, Nozibele prit trois cheveux de sa tête. Elle en mit un sous le lit, un derrière la porte et un dans le kraal. Puis elle rentra chez elle en courant aussi vite qu'elle pouvait.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Mara baada tu ya mbwa kuondoka, Nozibele akanyofoa nywele tatu kutoka kwenye kichwa chake. Akaweka unywele mmoja chini ya kitanda, mmoja nyuma ya mlango, na mwingine akauweka kwenye uzio wa nyumba. Halafu, akakimbia kuelekea nyumbani kwa nguvu zote.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	As soon as the dog had gone,
 Nozibele took three hairs from her
 head.
@@ -416,19 +422,16 @@ kraal.
 Then she ran home as fast as she
 could.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Mara baada tu ya mbwa kuondoka, Nozibele akanyofoa nywele tatu kutoka kwenye kichwa chake. Akaweka unywele mmoja chini ya kitanda, mmoja nyuma ya mlango, na mwingine akauweka kwenye uzio wa nyumba. Halafu, akakimbia kuelekea nyumbani kwa nguvu zote.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/12.mp3"></audio>
+		<audio id="audio12" onended="resetbutton('12')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -441,7 +444,10 @@ could.
 	Quand le chien revient, il chercha Nozibele. «&nbsp;Nozibele, où es-tu&nbsp;?&nbsp;» il cria. «&nbsp;Je suis ici, sous le lit,&nbsp;» dit le premier cheveu. «&nbsp;Je suis ici, derrière la porte,&nbsp;» dit le deuxième cheveu. «&nbsp;Je suis ici, dans le kraal,&nbsp;» dit le troisième cheveu.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Mbwa aliporudi akaanza kumtafuta Nozibele. "Nozibele, uko wapi?" akapiga kelele. "Niko hapa, chini ya kitanda," unywele wa kwanza ukajibu. "Nipo hapa nyuma ya mlango," unywele wa pili ukajibu. "Niko hapa kwenye uzio," unywele wa tatu ukajibu.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	When the dog came back, he looked
 for Nozibele.
 "Nozibele, where are you?" he
@@ -453,19 +459,16 @@ second hair.
 "I'm here, in the kraal," said the
 third hair.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Mbwa aliporudi akaanza kumtafuta Nozibele. "Nozibele, uko wapi?" akapiga kelele. "Niko hapa, chini ya kitanda," unywele wa kwanza ukajibu. "Nipo hapa nyuma ya mlango," unywele wa pili ukajibu. "Niko hapa kwenye uzio," unywele wa tatu ukajibu.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio13" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/13.mp3"></audio>
+		<audio id="audio13" onended="resetbutton('13')" src="http://globalstorybooks.net/media/audio/fr/0066/mp3/13.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -478,7 +481,10 @@ third hair.
 	Ainsi le chien sut que Nozibele l'avait trompé. Il courut et courut jusqu'au village. Mais les frères de Nozibele l'attendaient avec des gros bâtons. Le chien vira de bord et s'enfuit et il n'a pas été vu depuis.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Mbwa akagundua kuwa Nozibele amemkimbia. Kwa hiyo akakimbia kuelekea kijijini. Kaka zake Nozibele walikuwa wakimsubiri na fimbo. Mbwa alipowaona akageuka na kukimbia, na hajawahi kuonekana tena.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Then the dog knew that Nozibele
 had tricked him.
 So he ran and ran all the way to the
@@ -488,9 +494,6 @@ waiting there with big sticks.
 The dog turned and ran away and
 has never been seen since.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Mbwa akagundua kuwa Nozibele amemkimbia. Kwa hiyo akakimbia kuelekea kijijini. Kaka zake Nozibele walikuwa wakimsubiri na fimbo. Mbwa alipowaona akageuka na kukimbia, na hajawahi kuonekana tena.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -499,8 +502,8 @@ has never been seen since.
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 

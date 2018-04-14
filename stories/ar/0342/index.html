@@ -60,12 +60,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1 dir="rtl"><span class="def">العِقَابُ</span>
-<span dir="ltr" class="en">Punishment</span>
-<span class="sw">Adhabu</span>
+			<span class="l1">Punishment</span>
+			<span class="l2">Adhabu</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/01.mp3"></audio>
+				<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+				<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-tanzania/css/pencil.svg" alt="Written by" width="38px"></span> Adelheid Marie Bwire</h3>
@@ -74,7 +76,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by" width="38px"></span> Mashael Muhanna</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-tanzania/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-tanzania/stories/ar">Arabic</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-tanzania/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-tanzania/stories/ar/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ar/0342/ar-0342_.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ar/0342/ar-0342_punishment.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -85,23 +88,23 @@
 	فِي أحَدِ اَلأيَّامِ حَصَلَتْ مَامَا عَلَى اَلكَثِيرِ مِنَ الفَواكِهَ.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	Siku moja, mama alileta matunda mengi.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	One day, mama got a
 lot of fruit.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Siku moja, mama alileta matunda mengi.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/02.mp3"></audio>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -115,25 +118,25 @@ lot of fruit.
 أَجَابَتْ: "سَنَأكُلُ الفَوَاكِهَ في المَسَاءِ".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	“Tutakula matunda lini?” tunauliza. “Tutakula matunda leo jioni,” mama anasema.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"When can we have
 some fruit?" we ask.
 "We will eat the fruit
 tonight," says mama.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	“Tutakula matunda lini?” tunauliza. “Tutakula matunda leo jioni,” mama anasema.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/03.mp3"></audio>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -146,24 +149,24 @@ tonight," says mama.
 	أَخِي رَهِيمْ كَانَ طَمَّاعًا، تَذَوَّقَ كُلَّ الفَواكِهِ، وَأَكَلَ الكَثِيرَ مِنْهَا.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	Kaka yangu Rahim ni mlafi. Anaonja onja matunda yote. Anakula matunda mengi.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	My brother Rahim is
 greedy. He tastes all the
 fruit. He eats a lot of it.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Kaka yangu Rahim ni mlafi. Anaonja onja matunda yote. Anakula matunda mengi.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/04.mp3"></audio>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -177,26 +180,26 @@ fruit. He eats a lot of it.
 أَمَّا أَنَا فَقُلتُ: "رَهِيمْ غَيْرُ مُحْتَرَمٍ وَأَنَانِيٌّ".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	“Angalia Rahim alichokifanya!” mdogo wangu analalamika kwa sauti. “Rahim ni mtundu na mchoyo,” ninasema.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"Look at what Rahim
 did!" shouts my little
 brother. "Rahim is
 naughty and selfish," I
 say.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	“Angalia Rahim alichokifanya!” mdogo wangu analalamika kwa sauti. “Rahim ni mtundu na mchoyo,” ninasema.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/05.mp3"></audio>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -209,23 +212,23 @@ say.
 	غَضِبَتْ مَامَا مِنْ رَهِيمْ.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	Mama amekasirishwa na Rahim.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Mother is angry with
 Rahim.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Mama amekasirishwa na Rahim.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/06.mp3"></audio>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -238,24 +241,24 @@ Rahim.
 	وَنَحْنُ أَيْضًا غَضِبْنَا مِنْ رَهِيمْ ولَكِنَّهُ لَمْ يَعْتَذِرْ.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	Sisi pia tumekasirishwa na Rahim. Lakini Rahim haombi msamaha.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	We are also angry with
 Rahim. But Rahim is not
 sorry.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Sisi pia tumekasirishwa na Rahim. Lakini Rahim haombi msamaha.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/07.mp3"></audio>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -268,24 +271,24 @@ sorry.
 	سَأَلَ أَخِي الصَّغِيرُ: "أَلَنْ تُعَاقِبِي رَهِيمْ؟"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	“Hutamwadhibu Rahim?” mdogo wangu anauliza.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"Aren't you going to
 punish Rahim?" asks
 little brother.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	“Hutamwadhibu Rahim?” mdogo wangu anauliza.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/08.mp3"></audio>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -298,23 +301,23 @@ little brother.
 	حَذَّرَتْ مَامَا رَهِيمْ فَقَاَلتْ: "عَلَيْكَ أَنْ تَعْتَذِرَ حَالَّا".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	“Rahim, muda si mrefu utajuta,” mama anaonya.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"Rahim, soon you will
 be sorry," warns mama.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	“Rahim, muda si mrefu utajuta,” mama anaonya.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/09.mp3"></audio>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -327,23 +330,23 @@ be sorry," warns mama.
 	بَدَأَ رَهِيمْ بِالشُّعُورِ بِالمَرَضِ.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	Rahim anaanza kuhisi kuumwa.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Rahim starts to feel
 sick.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Rahim anaanza kuhisi kuumwa.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/10.mp3"></audio>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -356,23 +359,23 @@ sick.
 	هَمَسَ رَهِيمْ: "مَعِدَتِي تُؤْلِمُنِي".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	“Tumbo langu linauma sana,” Rahim ananong’ona.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	"My tummy is so sore,"
 whispers Rahim.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	“Tumbo langu linauma sana,” Rahim ananong’ona.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/11.mp3"></audio>
+		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -385,24 +388,24 @@ whispers Rahim.
 	عَرَفَتْ مَامَا مَاذَا حَصَلَ: "إنَّ الفَوَاكِهَ عَاقَبَتْ رَهِيمْ"!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	Mama alijua hili litatokea. Matunda yanamwadhibu Rahim!
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Mama knew this would
 happen. The fruit is
 punishing Rahim!
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Mama alijua hili litatokea. Matunda yanamwadhibu Rahim!
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/12.mp3"></audio>
+		<audio id="audio12" onended="resetbutton('12')" src="http://globalstorybooks.net/media/audio/ar/0342/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -415,15 +418,15 @@ punishing Rahim!
 	أَخِيرًا اِعْتَذَرَ رَهِيمْ فَقَالَ لَنَا: "لَنْ أَكُونَ طَمَّاعاً بَعْدَ اليَوْمِ".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3 dir="rtl">
+	Baadaye, Rahim anatuomba msamaha. “Kamwe sitakuwa mlafi tena,” anaahidi. Na sote tunamwamini.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3 dir="rtl">
 	Later, Rahim says sorry
 to us. "I will never be so
 greedy again," he
 promises. And we all
 believe him.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Baadaye, Rahim anatuomba msamaha. “Kamwe sitakuwa mlafi tena,” anaahidi. Na sote tunamwamini.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -433,8 +436,8 @@ believe him.
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 

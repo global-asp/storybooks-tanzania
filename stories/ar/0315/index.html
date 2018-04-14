@@ -60,12 +60,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1 dir="rtl"><span class="def">أغنية سكيما</span>
-<span dir="ltr" class="en">Sakima's song</span>
-<span class="sw">Wimbo wa Sakima</span>
+			<span class="l1">Sakima's song</span>
+			<span class="l2">Wimbo wa Sakima</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/01.mp3"></audio>
+				<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+				<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-tanzania/css/pencil.svg" alt="Written by" width="38px"></span> Ursula Nafula</h3>
@@ -74,7 +76,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by" width="38px"></span> Mashael Muhanna</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-tanzania/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-tanzania/stories/ar">Arabic</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-tanzania/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-tanzania/stories/ar/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ar/0315/ar-0315_.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ar/0315/ar-0315_sakima.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -85,26 +88,26 @@
 	كان سَكِيمَا يعيش مع والديه وأخته ذات الأربع سنوات في ضيعة يملكها رجل ثري. وكان كوخهم المبني من القش، في نهاية صف من الأشجار.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Sakima aliishi na wazazi wake na dada yake wa miaka minne. Waliishi katika shamba la mtu tajiri. Nyumba yao ya nyasi ilikuwa mwisho wa safu ya miti iliyopendeza.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	Sakima lived with his parents and his four year old sister.
 
 They lived on a rich man's land.
 
 Their grass-thatched hut was at the end of a row of trees.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Sakima aliishi na wazazi wake na dada yake wa miaka minne. Waliishi katika shamba la mtu tajiri. Nyumba yao ya nyasi ilikuwa mwisho wa safu ya miti iliyopendeza.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/02.mp3"></audio>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -117,24 +120,24 @@ Their grass-thatched hut was at the end of a row of trees.
 	عندما كان عمر سكيما ثلاث سنوات، مرض وفقد بصره، لكنه كان صبياً موهوباً.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Sakima alipokuwa na umri wa miaka mitatu, aliugua na kupoteza uwezo wa kuona. Hata hivyo, Sakima alikuwa mvulana mwenye kipaji.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	When Sakima was three years old, he fell sick and lost his sight.
 
 Sakima was a talented boy.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Sakima alipokuwa na umri wa miaka mitatu, aliugua na kupoteza uwezo wa kuona. Hata hivyo, Sakima alikuwa mvulana mwenye kipaji.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/03.mp3"></audio>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -147,24 +150,24 @@ Sakima was a talented boy.
 	فعل سكيما أشياء عديدة لا يستطيع صبيان في عمر الست سنوات أن يقوموا بها. كان مثلا يجالس كبار القوم في قريته ويناقش معهم قضايا هامة.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Sakima alitenda mambo mengi ambayo wavulana wengine wa umri wake hawakufanya. Kwa mfano, angeketi na watu wazima na kujadili mambo muhimu.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	Sakima did many things that other six year old boys did not do.
 
 For example, he could sit with older members of the village and discuss important matters.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Sakima alitenda mambo mengi ambayo wavulana wengine wa umri wake hawakufanya. Kwa mfano, angeketi na watu wazima na kujadili mambo muhimu.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/04.mp3"></audio>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -177,26 +180,26 @@ For example, he could sit with older members of the village and discuss importan
 	كان والدا سكيما يعملان في منزل الرجل الثري وكانا يغادران كوخهما باكراً في الصباح ويرجعان في وقت متأخر من المساء. وكان سكيما يمكث في المنزل مع أخته.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Wazazi wa Sakima walifanya kazi katika nyumba ya yule tajiri. Walitoka nyumbani asubuhi na mapema na kurudi jioni. Sakima aliachwa na dada yake.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	The parents of Sakima worked at the rich man's house.
 
 They left home early in the morning and returned late in the evening.
 
 Sakima was left with his little sister.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Wazazi wa Sakima walifanya kazi katika nyumba ya yule tajiri. Walitoka nyumbani asubuhi na mapema na kurudi jioni. Sakima aliachwa na dada yake.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/05.mp3"></audio>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -209,24 +212,24 @@ Sakima was left with his little sister.
 	كان سكيما مولعاً بالغناء، فسألته أمه يوما: "من أين حفظت هذه الأغاني يا سكيما؟"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Sakima alipenda kuimba nyimbo. Siku moja mama yake alimuuliza, "Sakima, unajifunza nyimbo hizi kutoka wapi?"
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	Sakima loved to sing songs.
 
 One day his mother asked him, "Where do you learn these songs from, Sakima?"
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Sakima alipenda kuimba nyimbo. Siku moja mama yake alimuuliza, "Sakima, unajifunza nyimbo hizi kutoka wapi?"
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/06.mp3"></audio>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -239,22 +242,22 @@ One day his mother asked him, "Where do you learn these songs from, Sakima?"
 	أجاب سكيما: "إنها تأتي هكذا يا أمي، أسمعها في رأسي فأغنيها".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
-	Sakima answered, "They just come, mother. I hear them in my head and then I sing."
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
 	Sakima alimjibu, "Nazisikia akilini mwangu kisha naziimba."
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
+	Sakima answered, "They just come, mother. I hear them in my head and then I sing."
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/07.mp3"></audio>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -267,26 +270,26 @@ One day his mother asked him, "Where do you learn these songs from, Sakima?"
 	كان سكيما يحب أن يغني لأخته، خاصة إذا ما شعرت بالجوع. فكانت تصغي إلى أغنيته المفضلة وتتمايل مع اللحن المهدئ اللطيف.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Sakima alipenda kumwimbia mdogo wake hasa akihisi njaa. Dada yake alimsikiliza na kucheza.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	Sakima liked to sing for his little sister, especially, if she felt hungry.
 
 His sister would listen to him singing his favourite song.
 
 She would sway to the soothing tune.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Sakima alipenda kumwimbia mdogo wake hasa akihisi njaa. Dada yake alimsikiliza na kucheza.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/08.mp3"></audio>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -299,24 +302,24 @@ She would sway to the soothing tune.
 	وكانت أخت سكيما تتوسل إليه: "هلا أعدت الغناء من جديد، يا سكيما؟". وكان سكيما يلبي طلب أخته فيعيد الغناء مرات.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	"Naomba uimbe tena na tena, Sakima," mdogo wake alimsihi. Sakima alikubali na kuimba mara nyingine.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	"Can you sing it again and again, Sakima," his sister would beg him.
 
 Sakima would accept and sing it over and over again.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	"Naomba uimbe tena na tena, Sakima," mdogo wake alimsihi. Sakima alikubali na kuimba mara nyingine.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/09.mp3"></audio>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -329,24 +332,24 @@ Sakima would accept and sing it over and over again.
 	وفي إحدى الأمسيات، رجع والدا سكيما إلى المنزل ولزما الصمت على غير العادة. عرف سكيما أن هناك شيئاً ما يقلقهما.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Jioni moja, wazazi wake waliporudi nyumbani, walikuwa kimya sana. Sakima alijua kwamba lazima kulikuwa na jambo baya.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	One evening when his parents returned home, they were very quiet.
 
 Sakima knew that there was something wrong.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Jioni moja, wazazi wake waliporudi nyumbani, walikuwa kimya sana. Sakima alijua kwamba lazima kulikuwa na jambo baya.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/10.mp3"></audio>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -359,26 +362,26 @@ Sakima knew that there was something wrong.
 	سأل سكيما: "أمي، أبي، ما خطبكما؟" أخبره والداه أن ابن الرجل الثري قد اختفى وأن والده يشعر بالوحدة وبالحزن الشديد.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	"Kuna shida gani, mama, baba?" Sakima aliuliza. Sakima aligundua kwamba mwana wa tajiri wao alikuwa amepotea. Tajiri alihuzunika na kuwa na upweke mkubwa.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	"What is wrong, mother, father?" Sakima asked.
 
 Sakima learned that the rich man's son was missing.
 
 The man was very sad and lonely.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	"Kuna shida gani, mama, baba?" Sakima aliuliza. Sakima aligundua kwamba mwana wa tajiri wao alikuwa amepotea. Tajiri alihuzunika na kuwa na upweke mkubwa.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/11.mp3"></audio>
+		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -391,26 +394,26 @@ The man was very sad and lonely.
 	قال سكيما لوالديه: "أنا أستطيع أن أغني له... قد يفرح من جديد". لكن والداه نهراه: "إنه غني جداً، وأنت لا تعدو أن تكون صبياً أعمى. هل تظن أن أغنيتك سوف تساعده؟".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	"Labda atafurahi tena nikimwimbia," Sakima aliwaambia wazazi wake. Wazazi wake walidharau wazo lake. "Yeye ni tajiri sana. Wewe ni mvulana asiyeona. Unadhani wimbo wako utamsaidia?"
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	"I can sing for him. He might be happy again," Sakima told his parents.
 
 But his parents dismissed him.
 
 "He is very rich. You are only a blind boy. Do you think your song will help him?"
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	"Labda atafurahi tena nikimwimbia," Sakima aliwaambia wazazi wake. Wazazi wake walidharau wazo lake. "Yeye ni tajiri sana. Wewe ni mvulana asiyeona. Unadhani wimbo wako utamsaidia?"
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/12.mp3"></audio>
+		<audio id="audio12" onended="resetbutton('12')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -423,26 +426,26 @@ But his parents dismissed him.
 	لكن سكيما لم ييأس، وكانت شقيقه الصغيرة تدعمه قائلة: "إن أغاني سكيما تريحني عندما أكون جائعة. وهي سوف تريح الرجل الثري أيضا".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Hata hivyo, Sakima hakukata tamaa. Mdogo wake alimpa moyo. Alisema, "Nyimbo za Sakima hunituliza mimi nikiwa na njaa. Zitamtuliza tajiri vile vile."
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	However, Sakima did not give up.
 
 His little sister supported him.
 
 She said, "Sakima's songs soothe me when I am hungry. They will soothe the rich man too."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Hata hivyo, Sakima hakukata tamaa. Mdogo wake alimpa moyo. Alisema, "Nyimbo za Sakima hunituliza mimi nikiwa na njaa. Zitamtuliza tajiri vile vile."
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio13" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/13.mp3"></audio>
+		<audio id="audio13" onended="resetbutton('13')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/13.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -455,22 +458,22 @@ She said, "Sakima's songs soothe me when I am hungry. They will soothe the rich 
 	وفي اليوم الموالي، طلب سكيما من شقيقته أن تقوده إلى منزل الرجل الثري.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
-	The following day, Sakima asked his little sister to lead him to the rich man's house.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
 	Siku iliyofuata, Sakima alimwomba mdogo wake amwongoze hadi kwenye nyumba ya tajiri.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
+	The following day, Sakima asked his little sister to lead him to the rich man's house.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text15" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio14" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/14.mp3"></audio>
+		<audio id="audio14" onended="resetbutton('14')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/14.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -483,24 +486,24 @@ She said, "Sakima's songs soothe me when I am hungry. They will soothe the rich 
 	وقف سكيما تحت نافذة كبيرة وبدأ ينشد أغنيته المفضلة. وشيئا فشيئا، بدأ الرجل الثري يطل برأسه من خلال النافذة الكبيرة.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Alisimama chini ya dirisha moja kubwa na kuanza kuimba wimbo wake alioupenda. Pole pole, kichwa cha tajiri kilionekana dirishani.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	He stood below one big window and began to sing his favourite song.
 
 Slowly, the head of the rich man began to show through the big window.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Alisimama chini ya dirisha moja kubwa na kuanza kuimba wimbo wake alioupenda. Pole pole, kichwa cha tajiri kilionekana dirishani.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text16" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio15" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/15.mp3"></audio>
+		<audio id="audio15" onended="resetbutton('15')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/15.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -513,24 +516,24 @@ Slowly, the head of the rich man began to show through the big window.
 	توقف العمال عن العمل وأخذوا يستمعون لأغنية سكيما الرائعة. لكن أحدهم قال: "لا أحد استطاع مواساة صاحب الضيعة إلى حد الآن. فهل يعتقد هذا الصبي الأعمى أنه قادر على مواساته؟".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Wafanyakazi waliacha kazi zao. Wakasikiliza wimbo mzuri wa Sakima. Hata hivyo, mwanamume mmoja alisema, "Hakuna aliyefaulu kumtuliza bwana. Je, huyu mvulana asiyeona anafikiri atamtuliza?"
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	The workers stopped what they were doing. They listened to Sakima's beautiful song.
 
 But one man said, "Nobody has been able to console the boss. Does this blind boy think he will console him?"
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Wafanyakazi waliacha kazi zao. Wakasikiliza wimbo mzuri wa Sakima. Hata hivyo, mwanamume mmoja alisema, "Hakuna aliyefaulu kumtuliza bwana. Je, huyu mvulana asiyeona anafikiri atamtuliza?"
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text17" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio16" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/16.mp3"></audio>
+		<audio id="audio16" onended="resetbutton('16')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/16.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -543,24 +546,24 @@ But one man said, "Nobody has been able to console the boss. Does this blind boy
 	أنهى سكيما الغناء واستدار مغادراً، لكن الرجل الثري خرج مسرعا وقال مخاطبا سكيما: "أرجوك، غنِّ لي من جديد".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Sakima alipomaliza kuimba wimbo wake alianza kuondoka. Tajiri alitoka nje kwa haraka na kusema, "Tafadhali, imba tena."
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	Sakima finished singing his song and turned to leave.
 
 But the rich man rushed out and said, "Please sing again."
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Sakima alipomaliza kuimba wimbo wake alianza kuondoka. Tajiri alitoka nje kwa haraka na kusema, "Tafadhali, imba tena."
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text18" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio17" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/17.mp3"></audio>
+		<audio id="audio17" onended="resetbutton('17')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/17.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -573,24 +576,24 @@ But the rich man rushed out and said, "Please sing again."
 	وفي تلك اللحظة بالذات، أقبل رجلان يحملان شخصا على محفة. إنه ابن الرجل الثري. لقد وجداه ملقا على حافة الطريق بعد أن أُشْبِعَ ضرباً.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Wakati huo huo, watu wawili walikuja wakiwa wamembeba mtu kwenye machela. Walimkuta mwana wa tajiri akiwa amechapwa na kuachwa kando ya barabara.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	At that very moment, two men came carrying someone on a stretcher.
 
 They had found the rich man's son beaten up and left on the side of the road.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Wakati huo huo, watu wawili walikuja wakiwa wamembeba mtu kwenye machela. Walimkuta mwana wa tajiri akiwa amechapwa na kuachwa kando ya barabara.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text17" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text19" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio18" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/18.mp3"></audio>
+		<audio id="audio18" onended="resetbutton('18')" src="http://globalstorybooks.net/media/audio/ar/0315/mp3/18.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton18" onclick="playpause('18')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 
@@ -603,15 +606,15 @@ They had found the rich man's son beaten up and left on the side of the road.
 	فرح الرجل الثري كثيراً لرؤية ابنه من جديد وكافأ سكيما لمواساته له، فأخذه مع ابنه إلى المستشفى وقرر أن يساعده على استرجاع بصره.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3 dir="rtl">
+	Tajiri alifurahi sana kumwona mwana wake tena. Alimzawadia Sakima kwa kumliwaza. Aliwapeleka mwanawe na Sakima hosipitali ili Sakima aweze kusaidiwa kuona tena.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3 dir="rtl">
 	The rich man was so happy to see his son again.
 
 He rewarded Sakima for consoling him.
 
 He took his son and Sakima to hospital so Sakima could regain his sight.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3 dir="rtl">
-	Tajiri alifurahi sana kumwona mwana wake tena. Alimzawadia Sakima kwa kumliwaza. Aliwapeleka mwanawe na Sakima hosipitali ili Sakima aweze kusaidiwa kuona tena.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -621,8 +624,8 @@ He took his son and Sakima to hospital so Sakima could regain his sight.
 		<button class="btn btn-lg" id="playbutton19" onclick="playpause('19')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ar','sw')" class="btn btn-lg lang-sw" title="Switch between Arabic and Swahili">sw</button>
-		<button onclick="switchlang('ar','en')" class="btn btn-lg lang-en" title="Switch between Arabic and English">en</button>
+		<button onclick="switchlang('ar,sw','sw,en,ar')" class="btn btn-lg lang-primary" title="Switch between Arabic and Swahili">sw</button>
+		<button onclick="switchlang('ar,en','sw,en,ar')" class="btn btn-lg lang-secondary" title="Switch between Arabic and English">en</button>
 	</div>
 </div>
 

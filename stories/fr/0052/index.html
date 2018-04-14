@@ -60,12 +60,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0052/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Simbegwire</span>
-<span class="en">Simbegwire</span>
-<span class="sw">Simbegwire</span>
+			<span class="l1">Simbegwire</span>
+			<span class="l2">Simbegwire</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/01.mp3"></audio>
+				<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+				<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-tanzania/css/pencil.svg" alt="Written by" width="38px"></span> Rukia Nantale</h3>
@@ -74,7 +76,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by" width="38px"></span> Alexandra Danahy</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-tanzania/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-tanzania/stories/fr">French</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-tanzania/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-tanzania/stories/fr/level5">Level 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/fr/0052/fr-0052_.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/fr/0052/fr-0052_simbegwire.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -85,7 +88,10 @@
 	Quand la mère de Simbegwire décéda, Simbegwire fut très triste. Son père essaya de son mieux de prendre soin de sa fille. Lentement, ils apprirent comment se sentir heureux de nouveau, sans la mère de Simbegwire. Chaque matin, ils s'assoyaient et discutaient de la journée à venir. Chaque soir, ils cuisinaient le souper ensemble. Après avoir lavé la vaisselle, le père de Simbegwire l'aidait avec ses devoirs.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Simbegwire alihuzunika mama yake alipofariki. Baba yake alijitahidi kumtunza mwanaye. Taratibu wakaanza kuwa wenye furaha tena, bila ya Mama Simbegwire. Kila asubuhi walikaa na kupanga mipango ya siku inayofuata. Kila jioni waliandaa chakula cha jioni pamoja. Baada ya kuosha vyombo, baba yake Simbegwire alimsaidia kufanya kazi zake za shule.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	When Simbegwire's mother died,
 she was very sad. Simbegwire's
 father did his best to take care of
@@ -99,19 +105,16 @@ they washed the dishes,
 Simbegwire's father helped her with
 homework.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Simbegwire alihuzunika mama yake alipofariki. Baba yake alijitahidi kumtunza mwanaye. Taratibu wakaanza kuwa wenye furaha tena, bila ya Mama Simbegwire. Kila asubuhi walikaa na kupanga mipango ya siku inayofuata. Kila jioni waliandaa chakula cha jioni pamoja. Baada ya kuosha vyombo, baba yake Simbegwire alimsaidia kufanya kazi zake za shule.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/02.mp3"></audio>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -124,7 +127,10 @@ homework.
 	Un jour, le père de Simbegwire retourna chez eux plus tard que d'habitude. «&nbsp;Où es-tu mon enfant&nbsp;?&nbsp;» il demanda. Simbegwire se précipita vers son père. Elle s'arrêta en chemin quand elle vit qu'il tenait la main d'une femme. «&nbsp;Je veux te présenter quelqu'un de spécial, mon enfant. Voici Anita,&nbsp;» il dit en souriant.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Siku moja baba yake Simbegwire alirudi nyumbani kwa kuchelewa. "Mwanangu uko wapi?" aliita. Simbegwire alimkimbilia baba yake. Alisimama ghafla baada ya kumwona baba yake akiwa ameshika mkono wa mwanamke. "Nataka ukutane na mtu muhimu, mwanangu. Huyu ni Anita," alisema huku akitabasamu.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	One day, Simbegwire's father came
 home later than usual. "Where are
 you my child?" he called.
@@ -135,19 +141,16 @@ want you to meet someone special,
 my child. This is Anita," he said
 smiling.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Siku moja baba yake Simbegwire alirudi nyumbani kwa kuchelewa. "Mwanangu uko wapi?" aliita. Simbegwire alimkimbilia baba yake. Alisimama ghafla baada ya kumwona baba yake akiwa ameshika mkono wa mwanamke. "Nataka ukutane na mtu muhimu, mwanangu. Huyu ni Anita," alisema huku akitabasamu.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/03.mp3"></audio>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -160,7 +163,10 @@ smiling.
 	«&nbsp;Bonjour Simbegwire, ton père m'a beaucoup parlé de toi,&nbsp;» dit Anita. Mais elle ne sourit pas et ne serra pas la main de la fille. Le père de Simbegwire était content et excité. Il dit que les trois vivraient ensemble et qu'ils auraient une bonne vie. «&nbsp;Mon enfant, j'espère que tu accepteras Anita comme ta mère,&nbsp;» il dit.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	"Hujambo Simbegwire? Baba yako amenisimulia mengi kuhusu wewe," alisema Anita. Lakini hakutabasamu wala kumpa Simbegwire mkono. Baba yake Simbegwire alijaa na furaha. Aliongelea jinsi maisha yatakavyokuwa mazuri watatu hao wakiishi pamoja. "Mwanangu, ni matumaini yangu kuwa utamkubali Anita kuwa mama yako," alisema.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	"Hello Simbegwire, your father told
 me a lot about you," said Anita. But
 she did not smile or take the girl's
@@ -172,19 +178,16 @@ good their life would be. "My child, I
 hope you will accept Anita as your
 mother," he said.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	"Hujambo Simbegwire? Baba yako amenisimulia mengi kuhusu wewe," alisema Anita. Lakini hakutabasamu wala kumpa Simbegwire mkono. Baba yake Simbegwire alijaa na furaha. Aliongelea jinsi maisha yatakavyokuwa mazuri watatu hao wakiishi pamoja. "Mwanangu, ni matumaini yangu kuwa utamkubali Anita kuwa mama yako," alisema.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/04.mp3"></audio>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -197,7 +200,10 @@ mother," he said.
 	La vie de Simbegwire changea. Elle n'avait plus le temps de s'asseoir avec son père le matin. Anita lui donnait tellement de tâches ménagères qu'elle était trop fatiguée pour faire ses devoirs le soir. Elle allait directement se coucher après le souper. Son seul confort était la couverture colorée que sa mère lui avait faite. Le père de Simbegwire ne semblait pas remarquer que sa fille était malheureuse.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Maisha ya Simbegwire yakabadilika. Hakuwa na muda tena wa kukaa na baba yake asubuhi. Anita alimpa shughuli nyingi sana za ndani hadi alikuwa anachoka kiasi ya kushindwa kufanya kazi zake za shuleni jioni. Alikuwa anaenda moja kwa moja kulala baada ya chakula cha jioni. Faraja pekee aliyokuwa nayo ni blanketi lenye rangi nyingi alilopewa na mama yake. Baba yake Simbegwire hakugundua kwamba binti yake alikuwa hana furaha.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Simbegwire's life changed. She no
 longer had time to sit with her
 father in the mornings. Anita gave
@@ -211,19 +217,16 @@ Simbegwire's father did not seem to
 notice that his daughter was
 unhappy.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Maisha ya Simbegwire yakabadilika. Hakuwa na muda tena wa kukaa na baba yake asubuhi. Anita alimpa shughuli nyingi sana za ndani hadi alikuwa anachoka kiasi ya kushindwa kufanya kazi zake za shuleni jioni. Alikuwa anaenda moja kwa moja kulala baada ya chakula cha jioni. Faraja pekee aliyokuwa nayo ni blanketi lenye rangi nyingi alilopewa na mama yake. Baba yake Simbegwire hakugundua kwamba binti yake alikuwa hana furaha.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/05.mp3"></audio>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -236,7 +239,10 @@ unhappy.
 	Après quelques mois, le père de Simbegwire annonça qu'il serait parti pour un certain temps. «&nbsp;Je dois voyager pour mon travail,&nbsp;» dit-il. «&nbsp;Mais je sais que vous allez vous occuper l'une de l'autre.&nbsp;» Le visage de Simbegwire s'allongea, mais son père ne remarqua pas. Anita ne dit rien. Elle n'était pas contente non plus.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Baada ya miezi michache, baba yake Simbegwire aliwaambia kwamba ana mpango wa kusafiri. "Itanibidi nisafiri kikazi," alisema. "Lakini najua hakutakuwa na tatizo." Uso wa Simbegwire ulijawa huzuni, lakini baba yake hakugundua. Anita hakusema lolote. Hakuwa na furaha.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	After a few months, Simbegwire's
 father told them that he would be
 away from home for a while. "I have
@@ -247,19 +253,16 @@ father did not notice. Anita did not
 say anything. She was not happy
 either.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Baada ya miezi michache, baba yake Simbegwire aliwaambia kwamba ana mpango wa kusafiri. "Itanibidi nisafiri kikazi," alisema. "Lakini najua hakutakuwa na tatizo." Uso wa Simbegwire ulijawa huzuni, lakini baba yake hakugundua. Anita hakusema lolote. Hakuwa na furaha.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/06.mp3"></audio>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -272,7 +275,10 @@ either.
 	Les choses empirèrent pour Simbegwire. Si elle ne terminait pas ses tâches, ou si elle se plaignait, Anita la frappait. Et pendant le souper, la femme mangeait la plupart de la nourriture, laissant Simbegwire avec peu de restes. Chaque nuit Simbegwire s'endormait en pleurant, embrassant la couverture de sa mère.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Mambo yakawa mabaya kwa Simbegwire. Aliposhindwa kumaliza kazi au alipolalamika, Anita alimpiga. Wakati wa chakula cha jioni Anita alikula chakula kingi, na kumwachia Simbegwire makombo. Kila usiku Simbegwire alikuwa analia, huku akilikumbatia blanketi la mama yake.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Things got worse for Simbegwire. If
 she didn't finish her chores, or she
 complained, Anita hit her. And at
@@ -283,19 +289,16 @@ Each night Simbegwire cried herself
 to sleep, hugging her mother's
 blanket.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Mambo yakawa mabaya kwa Simbegwire. Aliposhindwa kumaliza kazi au alipolalamika, Anita alimpiga. Wakati wa chakula cha jioni Anita alikula chakula kingi, na kumwachia Simbegwire makombo. Kila usiku Simbegwire alikuwa analia, huku akilikumbatia blanketi la mama yake.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/07.mp3"></audio>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -308,7 +311,10 @@ blanket.
 	Un matin, Simbegwire se leva en retard. «&nbsp;Paresseuse&nbsp;!&nbsp;» cria Anita. Elle tira Simbegwire de son lit. La couverture précieuse resta accrochée sur un clou et déchira en deux.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Asubuhi moja, Simbegwire alichelewa kuamka. "Wewe mtoto mvivu," Anita aliita kwa kelele. Akamvuta Simbegwire kutoka kitandani. Blanketi lake zuri likanasa kwenye msumari na kuchanika vipande viwili.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	One morning, Simbegwire was late
 getting out of bed. "You lazy girl!"
 Anita shouted. She pulled
@@ -316,19 +322,16 @@ Simbegwire out of bed. The
 precious blanket caught on a nail,
 and tore in two.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Asubuhi moja, Simbegwire alichelewa kuamka. "Wewe mtoto mvivu," Anita aliita kwa kelele. Akamvuta Simbegwire kutoka kitandani. Blanketi lake zuri likanasa kwenye msumari na kuchanika vipande viwili.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/08.mp3"></audio>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -341,7 +344,10 @@ and tore in two.
 	Simbegwire était très bouleversée. Elle décida de se sauver de chez elle. Elle prit les morceaux de couverture de sa mère, emporta de la nourriture et quitta la maison. Elle suivit le chemin que son père avait pris.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Simbegwire alikasirika sana. Akaamua kutoroka nyumbani. Akachukua vipande vya blanketi la mama yake. Akachukua na chakula na akaondoka nyumbani. Akaifuata barabara aliyopita baba yake.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Simbegwire was very upset. She
 decided to run away from home.
 She took the pieces of her mother's
@@ -349,19 +355,16 @@ blanket, packed some food, and left
 the house. She followed the road
 her father had taken.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Simbegwire alikasirika sana. Akaamua kutoroka nyumbani. Akachukua vipande vya blanketi la mama yake. Akachukua na chakula na akaondoka nyumbani. Akaifuata barabara aliyopita baba yake.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/09.mp3"></audio>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -374,7 +377,10 @@ her father had taken.
 	Quand le soir arriva, elle grimpa dans un arbre près d'un ruisseau et se fit un lit dans les branches. En s'endormant, elle chanta, «&nbsp;Maman, maman, maman, tu m'as quitté. Tu m'as quitté et tu n'es jamais retournée. Papa ne m'aime plus. Maman, quand reviens-tu&nbsp;? Tu m'as quitté.&nbsp;»
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Ilipofika jioni alipanda mti mrefu karibu na kijito na akaandaa kitanda kwenye matawi ya mti. Alipokuwa analala akaimba "Maama, maama, maama, umeniacha. Umeniacha na haukurudi tena. Baba hanipendi tena. Mama unarudi lini? Uliniacha."
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	When it came to evening, she
 climbed a tall tree near a stream
 and made a bed for herself in the
@@ -387,19 +393,16 @@ Father doesn't love me anymore.
 Mother, when are you coming back?
 You left me."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Ilipofika jioni alipanda mti mrefu karibu na kijito na akaandaa kitanda kwenye matawi ya mti. Alipokuwa analala akaimba "Maama, maama, maama, umeniacha. Umeniacha na haukurudi tena. Baba hanipendi tena. Mama unarudi lini? Uliniacha."
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/10.mp3"></audio>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -412,7 +415,10 @@ You left me."
 	Le lendemain matin, Simbegwire chanta encore la chanson. Quand les femmes arrivèrent au ruisseau pour laver leur linge, elles entendirent la chanson triste qui venait du grand arbre. Elles pensaient que c'était seulement le bruissement des feuilles et continuèrent leur travail. Mais une des femmes écouta la chanson attentivement.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Asubuhi iliyofuata, Simbegwire aliimba ule wimbo tena. Wakina mama walipokuja kufua nguo zao walisikia wimbo wa huzuni kutoka kwenye mti mrefu. Wakafikiri ni upepo unatikisa matawi ya mti na wakaendelea na kazi zao. Lakini mama mmoja akasikiliza ule wimbo kwa makini.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	The next morning, Simbegwire sang
 the song again. When the women
 came to wash their clothes at the
@@ -424,19 +430,16 @@ with their work. But one of the
 women listened very carefully to
 the song.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Asubuhi iliyofuata, Simbegwire aliimba ule wimbo tena. Wakina mama walipokuja kufua nguo zao walisikia wimbo wa huzuni kutoka kwenye mti mrefu. Wakafikiri ni upepo unatikisa matawi ya mti na wakaendelea na kazi zao. Lakini mama mmoja akasikiliza ule wimbo kwa makini.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/11.mp3"></audio>
+		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -449,7 +452,10 @@ the song.
 	Cette femme jeta un coup d'œil dans l'arbre. Quand elle vit la fille et les morceaux de couverture colorés, elle cria, «&nbsp;Simbegwire, l'enfant de mon frère&nbsp;!&nbsp;» Les autres femmes arrêtèrent de laver et aidèrent Simbegwire à descendre de l'arbre. Sa tante l'embrassa et essaya de la réconforter.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Mama huyo akaangalia juu ya mti. Alipomwona msichana na vipande vya blanketi la rangi, akalia, "Simbegwire, mtoto wa kaka yangu!" Wakina mama wengine wakaacha kufua na wakamsaidia Simbegwire kushuka toka juu ya mti. Shangazi yake akamkumbatia na kumfariji.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	This woman looked up into the tree.
 When she saw the girl and the
 pieces of colourful blanket, she
@@ -461,19 +467,16 @@ down from the tree. Her aunt
 hugged the little girl and tried to
 comfort her.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Mama huyo akaangalia juu ya mti. Alipomwona msichana na vipande vya blanketi la rangi, akalia, "Simbegwire, mtoto wa kaka yangu!" Wakina mama wengine wakaacha kufua na wakamsaidia Simbegwire kushuka toka juu ya mti. Shangazi yake akamkumbatia na kumfariji.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/12.mp3"></audio>
+		<audio id="audio12" onended="resetbutton('12')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -486,7 +489,10 @@ comfort her.
 	La tante de Simbegwire la mena chez elle. Elle donna à Simbegwire un repas chaud et la borda dans son lit avec la couverture de sa mère. Ce soir-là, Simbegwire s'endormit en pleurant. Mais ses larmes étaient des larmes de joie. Elle savait que sa tante prendrait soin d'elle.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Shangazi yake Simbegwire akampeleka nyumbani kwake. Akampatia chakula, akampeleka kitandani na akamfunika na blanketi la mama yake. Usiku ule Simbegwire akalia alipokwenda kulala. Lakini yalikuwa machozi ya furaha. Alijua shangazi yake atamtunza.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Simbegwire's aunt took the child to
 her own house. She gave
 Simbegwire warm food, and tucked
@@ -497,19 +503,16 @@ went to sleep. But they were tears
 of relief. She knew her aunt would
 look after her.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Shangazi yake Simbegwire akampeleka nyumbani kwake. Akampatia chakula, akampeleka kitandani na akamfunika na blanketi la mama yake. Usiku ule Simbegwire akalia alipokwenda kulala. Lakini yalikuwa machozi ya furaha. Alijua shangazi yake atamtunza.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio13" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/13.mp3"></audio>
+		<audio id="audio13" onended="resetbutton('13')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/13.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -522,7 +525,10 @@ look after her.
 	Quand le père de Simbegwire rentra chez lui, il trouva la chambre de sa fille vide. «&nbsp;Qu'est-ce qui est arrivé, Anita&nbsp;?&nbsp;» il demanda, le cœur gros. La femme expliqua que Simbegwire s'était sauvée. «&nbsp;Je voulais qu'elle me respecte,&nbsp;» dit-elle. «&nbsp;Mais j'ai peut-être été trop sévère.&nbsp;» Le père de Simbegwire quitta la maison et se dirigea dans la direction du ruisseau. Il se rendit au village de sa sœur pour découvrir si elle avait vu Simbegwire.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Baba yake Simbegwire aliporudi nyumbani, alikikuta chumba chake kikiwa tupu. "Nini kimetokea, Anita?" aliuliza kwa simanzi. Anita akaelezea kuwa Simbegwire alitoroka. "Nilitaka aniheshimu," alisema. "Labda nilikuwa mkali sana." Baba yake Simbegwire aliondoka nyumbani na akaelekea kwenye kijito. Akaenda kwenye kijiji cha dada yake kuuliza kama amemwona Simbegwire.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	When Simbegwire's father returned
 home, he found her room empty.
 "What happened, Anita?" he asked
@@ -537,19 +543,16 @@ stream. He continued to his sister's
 village to find out if she had seen
 Simbegwire.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Baba yake Simbegwire aliporudi nyumbani, alikikuta chumba chake kikiwa tupu. "Nini kimetokea, Anita?" aliuliza kwa simanzi. Anita akaelezea kuwa Simbegwire alitoroka. "Nilitaka aniheshimu," alisema. "Labda nilikuwa mkali sana." Baba yake Simbegwire aliondoka nyumbani na akaelekea kwenye kijito. Akaenda kwenye kijiji cha dada yake kuuliza kama amemwona Simbegwire.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text15" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio14" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/14.mp3"></audio>
+		<audio id="audio14" onended="resetbutton('14')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/14.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -562,7 +565,10 @@ Simbegwire.
 	Simbegwire jouait avec ses cousins quand elle vit son père de loin. Elle avait peur qu'il soit peut-être fâché, alors elle se précipita à l'intérieur de la maison pour se cacher. Mais son père vint la voir et lui dit, «&nbsp;Simbegwire, tu t'es trouvé une mère parfaite. Une mère qui t'aime et te comprends. Je suis fier de toi et je t'aime.&nbsp;» Ils se mirent d'accord que Simbegwire resterais avec sa tante aussi longtemps qu'elle veuille.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Simbegwire alikuwa anacheza na binamu zake alipomwona baba yake akija kwa mbali. Aliogopa kuwa baba yake angekuwa amekasirika, na akakimbilia ndani ya nyumba ili ajifiche. Baba yake alimwendea na akamwambia, "Simbegwire umempata mama mzuri. Anayekupenda na kukuelewa. Najivunia kuwa nawe na ninakupenda." Walikubaliana kuwa Simbegwire angeishi na shangazi yake kwa muda wote atakaotaka.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Simbegwire was playing with her
 cousins when she saw her father
 from far away. She was scared he
@@ -578,19 +584,16 @@ They agreed that Simbegwire would
 stay with her aunt as long as she
 wanted to.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Simbegwire alikuwa anacheza na binamu zake alipomwona baba yake akija kwa mbali. Aliogopa kuwa baba yake angekuwa amekasirika, na akakimbilia ndani ya nyumba ili ajifiche. Baba yake alimwendea na akamwambia, "Simbegwire umempata mama mzuri. Anayekupenda na kukuelewa. Najivunia kuwa nawe na ninakupenda." Walikubaliana kuwa Simbegwire angeishi na shangazi yake kwa muda wote atakaotaka.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text16" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio15" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/15.mp3"></audio>
+		<audio id="audio15" onended="resetbutton('15')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/15.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -603,7 +606,10 @@ wanted to.
 	Son père lui rendit visite à chaque jour. Finalement, il vint avec Anita. Elle tendit la main vers celle de Simbegwire. «&nbsp;Je suis tellement désolée, petite, j'ai eu tords,&nbsp;» elle cria. «&nbsp;Me laisseras-tu essayer de nouveau&nbsp;?&nbsp;» Simbegwire examina son père et son regard inquiet. Puis elle fit lentement un pas en avant et mit ses bras autour d'Anita.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Baba yake alikuwa akimtembelea kila siku. Mwishoe akaja na Anita. Akampa mkono Simbegwire. "Nisamehe, nilikosea," akalia. "Utanipa nafasi kujaribu tena?" Simbegwire alimwangalia baba yake aliyekuwa na uso wa wasiwasi. Baadaye akamwendea Anita taratibu na akamkumbatia.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Her father visited her every day.
 Eventually, he came with Anita. She
 reached out for Simbegwire's hand.
@@ -615,19 +621,16 @@ and his worried face. Then she
 stepped forward slowly and put her
 arms around Anita.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Baba yake alikuwa akimtembelea kila siku. Mwishoe akaja na Anita. Akampa mkono Simbegwire. "Nisamehe, nilikosea," akalia. "Utanipa nafasi kujaribu tena?" Simbegwire alimwangalia baba yake aliyekuwa na uso wa wasiwasi. Baadaye akamwendea Anita taratibu na akamkumbatia.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text17" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio16" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/16.mp3"></audio>
+		<audio id="audio16" onended="resetbutton('16')" src="http://globalstorybooks.net/media/audio/fr/0052/mp3/16.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -640,7 +643,10 @@ arms around Anita.
 	La semaine suivante, Anita invita Simbegwire, ainsi que ses cousins et sa tante, chez elle pour un repas. Quel festin&nbsp;! Anita prépara tous les plats favoris de Simbegwire et tous mangèrent jusqu'à temps qu'ils soient pleins. Ensuite, les enfants jouèrent tandis que les adultes parlaient. Simbegwire se sentait contente et courageuse. Elle décida que bientôt, très bientôt, elle retournerait chez elle pour vivre avec son père et sa belle-mère.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
+	Wiki iliyofuata, Anita aliwaalika Simbegwire, binamu zake, na shangazi yake kwa ajili ya chakula. Anita akaandaa vyakula vyote ambavyo Simbegwire anavipenda, na kila mmoja akala hadi akashiba. Baada ya kula watoto wakaenda kucheza huku watu wazima wakiongea. Simbegwire akajisikia furaha na jasiri. Akaamua kuwa si muda mrefu atarejea nyumbani kuishi na baba yake na mama yake wa kambo.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	The next week, Anita invited
 Simbegwire, with her cousins and
 aunt, to the house for a meal. What
@@ -654,9 +660,6 @@ She decided that soon, very soon,
 she would return home to live with
 her father and her stepmother.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Wiki iliyofuata, Anita aliwaalika Simbegwire, binamu zake, na shangazi yake kwa ajili ya chakula. Anita akaandaa vyakula vyote ambavyo Simbegwire anavipenda, na kila mmoja akala hadi akashiba. Baada ya kula watoto wakaenda kucheza huku watu wazima wakiongea. Simbegwire akajisikia furaha na jasiri. Akaamua kuwa si muda mrefu atarejea nyumbani kuishi na baba yake na mama yake wa kambo.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -665,8 +668,8 @@ her father and her stepmother.
 		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 

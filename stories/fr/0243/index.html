@@ -60,12 +60,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0243/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Les vacances avec grand-maman</span>
-<span class="en">Holidays with grandmother</span>
-<span class="sw">Likizo kwa bibi</span>
+			<span class="l1">Holidays with grandmother</span>
+			<span class="l2">Likizo kwa bibi</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/01.mp3"></audio>
+				<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+				<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-tanzania/css/pencil.svg" alt="Written by" width="38px"></span> Violet Otieno</h3>
@@ -74,7 +76,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by" width="38px"></span> Alexandra Danahy</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-tanzania/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-tanzania/stories/fr">French</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-tanzania/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-tanzania/stories/fr/level4">Level 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/fr/0243/fr-0243_.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/fr/0243/fr-0243_holidays.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -85,7 +88,10 @@
 	Odongo et Apiyo vivaient dans la ville avec leur père. Ils avaient hâte aux vacances. Non seulement parce que l'école serait fermée, mais parce qu'ils iraient rendre visite à leur grand-mère. Elle vivait dans un village de pêche près d'un grand lac.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Odongo na Apiyo waliishi mjini na baba yao. Walisubiri likizo kwa hamu. Siyo tu kwa shule kufungwa, bali ni kwa sababu walienda kumtembelea bibi yao. Aliishi katika kijiji cha uvuvi karibu na ziwa kubwa.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo and Apiyo lived in the
 city with their father.
 They looked forward to the
@@ -96,19 +102,16 @@ grandmother.
 She lived in a fishing village
 near a large lake.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Odongo na Apiyo waliishi mjini na baba yao. Walisubiri likizo kwa hamu. Siyo tu kwa shule kufungwa, bali ni kwa sababu walienda kumtembelea bibi yao. Aliishi katika kijiji cha uvuvi karibu na ziwa kubwa.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/02.mp3"></audio>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -121,7 +124,10 @@ near a large lake.
 	Odongo et Apiyo avaient hâte parce que c'était le temps de rendre visite à leur grand-mère de nouveau. La veille, ils ont fait leurs valises et se sont préparés pour le long voyage jusqu'à son village. Ils ne pouvaient pas dormir et ils ont parlé toute la nuit à propos des vacances.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Odongo na Apiyo walichangamka kwani ulikuwa wakati wa kumtembelea bibi kwa mara nyingine. Usiku huo, walipanga mizigo yao na kujiandaa kwa safari ndefu ya kwenda kijijini. Hawakuweza kulala ila waliongea usiku kucha juu ya likizo yao.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo and Apiyo were excited
 because it was time to visit
 their grandmother again.
@@ -132,19 +138,16 @@ They could not sleep and talked
 the whole night about the
 holiday.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Odongo na Apiyo walichangamka kwani ulikuwa wakati wa kumtembelea bibi kwa mara nyingine. Usiku huo, walipanga mizigo yao na kujiandaa kwa safari ndefu ya kwenda kijijini. Hawakuweza kulala ila waliongea usiku kucha juu ya likizo yao.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/03.mp3"></audio>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -157,7 +160,10 @@ holiday.
 	Tôt le lendemain matin, ils sont partis vers le village dans la voiture de leur père. Ils ont vu des montagnes, des animaux sauvages et des plantations de thé. Ils ont compté des voitures et ont chanté des chansons.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Mapema asubuhi iliyofuata, waliondoka katika gari la baba yao kuelekea kijijini. Walipita milima, wanyama pori na mashamba ya majani ya chai. Walihesabu magari na kuimba nyimbo.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Early the next morning, they
 left for the village in their
 father's car.
@@ -167,19 +173,16 @@ plantations.
 They counted cars and sang
 songs.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Mapema asubuhi iliyofuata, waliondoka katika gari la baba yao kuelekea kijijini. Walipita milima, wanyama pori na mashamba ya majani ya chai. Walihesabu magari na kuimba nyimbo.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/04.mp3"></audio>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -192,23 +195,23 @@ songs.
 	Après un certain temps, les enfants se sont endormis, fatigués.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Baada ya muda, watoto walichoka na kusinzia.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	After a while, the children were
 tired and fell asleep.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Baada ya muda, watoto walichoka na kusinzia.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/05.mp3"></audio>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -221,7 +224,10 @@ tired and fell asleep.
 	Papa réveilla Odongo et Apiyo lorsqu'ils arrivèrent au village. Ils ont trouvé leur grand-mère Nyar-Kanyada assied sous un arbre. En le luo, Nyar-Kanyada veut dire «&nbsp;fille du peuple de Kanyada&nbsp;». Elle était une femme belle et forte.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Baba aliwaamsha Odongo na Apiyo walipofika kijijini. Walimkuta bibi yao, Nyar-Kanyada, akipumzika kwenye mkeka chini ya mti. Kwa Dholuo, Nyar-Kanyada maana yake ni 'binti wa watu wa Kanyada'. Alikuwa ni mwanamke mrembo na imara.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Father woke up Odongo and
 Apiyo as they arrived in the
 village.
@@ -234,19 +240,16 @@ Kanyada'.
 She was a strong and beautiful
 woman.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Baba aliwaamsha Odongo na Apiyo walipofika kijijini. Walimkuta bibi yao, Nyar-Kanyada, akipumzika kwenye mkeka chini ya mti. Kwa Dholuo, Nyar-Kanyada maana yake ni 'binti wa watu wa Kanyada'. Alikuwa ni mwanamke mrembo na imara.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/06.mp3"></audio>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -259,7 +262,10 @@ woman.
 	Nyar-Kanyada les a accueillis dans sa maison et a dansé tout autour de la salle en chantant de bonheur. Ses petits-enfants avaient hâte de lui donner les cadeaux qu'ils avaient apporté de la ville. «&nbsp;Ouvre mon cadeau en premier,&nbsp;» dit Odongo. «&nbsp;Non, ouvre le mien en premier&nbsp;!&nbsp;» dit Apiyo.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Nyar-Kanyada aliwakaribisha ndani kwa kucheza na kuimba kwa furaha. Wajukuu wake walikuwa na shauku ya kumpa zawadi walizomletea kutoka mjini. "Fungua yangu kwanza," Odongo alisema. "Hapana, yangu kwanza!" Apiyo akasema.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Nyar-Kanyada welcomed them
 into the house and danced
 around the room singing with
@@ -271,19 +277,16 @@ brought from the city.
 Odongo.
 "No, my gift first!" said Apiyo.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Nyar-Kanyada aliwakaribisha ndani kwa kucheza na kuimba kwa furaha. Wajukuu wake walikuwa na shauku ya kumpa zawadi walizomletea kutoka mjini. "Fungua yangu kwanza," Odongo alisema. "Hapana, yangu kwanza!" Apiyo akasema.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/07.mp3"></audio>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -296,25 +299,25 @@ Odongo.
 	Après avoir ouvert ses cadeaux, Nyar-Kanyada donna une bénédiction traditionnelle à ses petits-enfants.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Baada ya kufungua zawadi, Nyar-Kanyada aliwabariki wajukuu wake kitamaduni.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	After she opened the presents,
 Nyar-Kanyada blessed her
 grandchildren in a traditional
 way.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Baada ya kufungua zawadi, Nyar-Kanyada aliwabariki wajukuu wake kitamaduni.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/08.mp3"></audio>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -327,24 +330,24 @@ way.
 	Ensuite, Odongo et Apiyo sont sortis dehors. Ils ont poursuivit des papillons et des oiseaux.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Kisha Odongo na Apiyo wakaenda nje. Waliwakimbiza vipepeo na ndege.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Then Odongo and Apiyo went
 outside. They chased butterflies
 and birds.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Kisha Odongo na Apiyo wakaenda nje. Waliwakimbiza vipepeo na ndege.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/09.mp3"></audio>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -357,24 +360,24 @@ and birds.
 	Ils ont grimpé des arbres et se sont éclaboussés dans l'eau du lac.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Walipanda kwenye miti na kurushiana maji ziwani.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	They climbed trees and
 splashed in the water of the
 lake.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Walipanda kwenye miti na kurushiana maji ziwani.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/10.mp3"></audio>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -387,25 +390,25 @@ lake.
 	Quand la nuit tomba ils sont retournés à la maison pour souper. Avant qu'ils puissent finir de manger, ils s'endormaient&nbsp;!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Giza Iilipoingia, walirudi nyumbani kwa ajili ya chakula cha jioni. Kabla hata ya kumaliza kula, walikuwa wanasinzia!
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	When it was dark they returned
 to the house for dinner.
 Before they could finish eating,
 they were falling asleep!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Giza Iilipoingia, walirudi nyumbani kwa ajili ya chakula cha jioni. Kabla hata ya kumaliza kula, walikuwa wanasinzia!
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/11.mp3"></audio>
+		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -418,24 +421,24 @@ they were falling asleep!
 	Le lendemain, le père des enfants est retourné à la ville, les laissant avec Nyar-Kanyada.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Siku iliyofuata, baba yao alirudi mjini na kuwaacha na Nyar-Kanyada.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	The next day, the children's
 father drove back to the city
 leaving them with Nyar-Kanyada.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Siku iliyofuata, baba yao alirudi mjini na kuwaacha na Nyar-Kanyada.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/12.mp3"></audio>
+		<audio id="audio12" onended="resetbutton('12')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -448,7 +451,10 @@ leaving them with Nyar-Kanyada.
 	Odongo et Apiyo ont aidé leur grand-mère à faire les tâches ménagères. Ils sont allés chercher de l'eau et du bois de chauffage. Ils ont recueilli les œufs des poules et ont ramassé des verts dans le jardin.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Odongo na Apiyo walimsaidia bibi yao na kazi za nyumbani. Walichota maji na kuokota kuni. Walikusanya mayai ya kuku na kuchuma mboga za majani kutoka kwenye bustani.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo and Apiyo helped their
 grandmother with household
 chores.
@@ -458,19 +464,16 @@ They collected eggs from the
 chickens and picked greens
 from the garden.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Odongo na Apiyo walimsaidia bibi yao na kazi za nyumbani. Walichota maji na kuokota kuni. Walikusanya mayai ya kuku na kuchuma mboga za majani kutoka kwenye bustani.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text14" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio13" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/13.mp3"></audio>
+		<audio id="audio13" onended="resetbutton('13')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/13.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -483,7 +486,10 @@ from the garden.
 	Nyar-Kanyada a montré à ses petits-enfants comment faire de l'ugali mou pour manger avec du ragoût. Elle leur a montré comment faire du riz de noix de coco pour manger avec du poisson grillé.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Nyar-Kanyada aliwafundisha wajukuu wake jinsi ya kupika ugali mwepesi wa kula na mchuzi. Aliwaonesha namna ya kupika wali wa nazi wa kuliwa na samaki wa kukaanga.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Nyar-Kanyada taught her
 grandchildren to make soft ugali
 to eat with stew.
@@ -491,19 +497,16 @@ She showed them how to make
 coconut rice to eat with roast
 fish.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Nyar-Kanyada aliwafundisha wajukuu wake jinsi ya kupika ugali mwepesi wa kula na mchuzi. Aliwaonesha namna ya kupika wali wa nazi wa kuliwa na samaki wa kukaanga.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text15" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio14" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/14.mp3"></audio>
+		<audio id="audio14" onended="resetbutton('14')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/14.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton14" onclick="playpause('14')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -516,7 +519,10 @@ fish.
 	Un matin, Odongo a apporté les vaches de sa grand-mère paître. Elles se sont rendues dans la ferme d'un voisin. Le fermier était fâché envers Odongo. Il a menacé de garder les vaches pour avoir mangé ses récoltes. Après ce jour-là, le garçon a veillé à ce que les vaches n'attirent pas d'ennuis.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Asubuhi moja, Odongo aliwapeleka ng'ombe wa bibi yake malishoni. Wakakimbilia ndani ya shamba la jirani. Mwenye shamba alikasirishwa sana na Odongo. Akatishia kuwazuia ng'ombe kula mimea yake. Tangu siku hiyo, Odongo alihakikisha kwamba ng'ombe hawaingii matatani tena.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	One morning, Odongo took his
 grandmother's cows to graze.
 They ran onto a neighbour's
@@ -528,19 +534,16 @@ After that day, the boy made
 sure that the cows did not get
 into trouble again.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Asubuhi moja, Odongo aliwapeleka ng'ombe wa bibi yake malishoni. Wakakimbilia ndani ya shamba la jirani. Mwenye shamba alikasirishwa sana na Odongo. Akatishia kuwazuia ng'ombe kula mimea yake. Tangu siku hiyo, Odongo alihakikisha kwamba ng'ombe hawaingii matatani tena.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text16" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio15" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/15.mp3"></audio>
+		<audio id="audio15" onended="resetbutton('15')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/15.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton15" onclick="playpause('15')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -553,7 +556,10 @@ into trouble again.
 	Un autre jour, les enfants sont allés au marché avec Nyar-Kanyada. Elle avait un stand pour vendre des légumes, du sucre et du savon. Apiyo aimait donner le prix des articles aux clients. Odongo emballait ce que les clients achetaient.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Siku nyingine watoto walikwenda sokoni pamoja na Nyar-Kanyada. Nyar-Kanyada alikuwa na kibanda cha kuuza mboga, sukari na sabuni. Apiyo alipenda kuwatajia wateja bei za bidhaa. Odongo aliwafungia wateja bidhaa walizonunua.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	On another day, the children
 went to the marketplace with
 Nyar-Kanyada.
@@ -564,19 +570,16 @@ price of items.
 Odongo would pack the items
 that customers bought.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Siku nyingine watoto walikwenda sokoni pamoja na Nyar-Kanyada. Nyar-Kanyada alikuwa na kibanda cha kuuza mboga, sukari na sabuni. Apiyo alipenda kuwatajia wateja bei za bidhaa. Odongo aliwafungia wateja bidhaa walizonunua.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text17" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio16" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/16.mp3"></audio>
+		<audio id="audio16" onended="resetbutton('16')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/16.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton16" onclick="playpause('16')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -589,25 +592,25 @@ that customers bought.
 	À la fin de la journée, ils ont bu du thé chai ensemble. Ils ont aidé leur grand-mère à compter l'argent qu'elle avait gagné.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Mwisho wa siku walikunywa chai pamoja. Walimsaidia bibi yao kuhesabu pesa alizozipata.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	At the end of the day they
 drank chai tea together.
 They helped grandmother to
 count the money she earned.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Mwisho wa siku walikunywa chai pamoja. Walimsaidia bibi yao kuhesabu pesa alizozipata.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text18" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio17" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/17.mp3"></audio>
+		<audio id="audio17" onended="resetbutton('17')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/17.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton17" onclick="playpause('17')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -620,7 +623,10 @@ count the money she earned.
 	Trop tôt, les vacances étaient terminées et les enfants devaient retourner à la ville. Nyar-Kanyada donna une casquette à Odongo et un chandail à Apiyo. Elle emballa de la nourriture pour leur voyage.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Likizo ilikaribia kuisha na watoto walitakiwa kurudi mjini. Nyar-Kanyada alimpa Odongo kofia na Apiyo sweta. Aliwafungia chakula cha kula safarini.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	But too soon the holidays were
 over and the children had to go
 back to the city.
@@ -629,19 +635,16 @@ cap and Apiyo a sweater.
 She packed food for their
 journey.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Likizo ilikaribia kuisha na watoto walitakiwa kurudi mjini. Nyar-Kanyada alimpa Odongo kofia na Apiyo sweta. Aliwafungia chakula cha kula safarini.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text17" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text19" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio18" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/18.mp3"></audio>
+		<audio id="audio18" onended="resetbutton('18')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/18.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton18" onclick="playpause('18')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -654,7 +657,10 @@ journey.
 	Quand leur père est venu les chercher, ils ne voulaient pas partir. Les enfants ont supplié Nyar-Kanyada de venir avec eux à la ville. Elle sourit et dit, «&nbsp;Je suis trop vieille pour la ville. J'attendrai votre retour à mon village.&nbsp;»
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Baba yao alipokuja kuwachukua, hawakutaka kuondoka. Walimuomba Nyar-Kanyada aende nao mjini. Alitabasamu na kusema, "Nimezeeka, siyawezi ya mjini. Nitasubiri mje kijijini kwangu tena."
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	When their father came to fetch
 them, they did not want to
 leave.
@@ -665,19 +671,16 @@ old for the city. I will be waiting
 for you to come to my village
 again."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Baba yao alipokuja kuwachukua, hawakutaka kuondoka. Walimuomba Nyar-Kanyada aende nao mjini. Alitabasamu na kusema, "Nimezeeka, siyawezi ya mjini. Nitasubiri mje kijijini kwangu tena."
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text18" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text20" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio19" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/19.mp3"></audio>
+		<audio id="audio19" onended="resetbutton('19')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/19.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton19" onclick="playpause('19')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -690,23 +693,23 @@ again."
 	Odongo et Apiyo l'on tous les deux embrassé fort et lui on dit au revoir.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Odongo na Apiyo walimkumbatia kwa pamoja na kumuaga.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Odongo and Apiyo both hugged
 her tightly and said goodbye.
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Odongo na Apiyo walimkumbatia kwa pamoja na kumuaga.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text19" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text21" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio20" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/20.mp3"></audio>
+		<audio id="audio20" onended="resetbutton('20')" src="http://globalstorybooks.net/media/audio/fr/0243/mp3/20.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton20" onclick="playpause('20')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 
@@ -719,7 +722,10 @@ her tightly and said goodbye.
 	Quand Odongo et Apiyo sont retournés à l'école ils ont raconté leurs histoires de la vie dans le village à leurs amis. Certains enfants croyaient que la vie en ville était bonne. D'autres étaient de l'avis que le village était meilleur. Surtout, tous étaient d'accord que Odongo et Apiyo avaient une grand-mère merveilleuse&nbsp;!
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
+	Odongo na Apiyo waliporudi shuleni, waliwasimulia marafiki zao kuhusu maisha ya kijijini. Baadhi ya watoto waliamini kuwa maisha ya mjini ni mazuri. Wengine waliamini kijijini ni bora zaidi. Lakini zaidi ya yote, kila mmoja alikubali kwamba Odongo na Apiyo walikuwa na bibi wa kipekee.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	When Odongo and Apiyo went
 back to school they told their
 friends about life in the village.
@@ -731,9 +737,6 @@ But most of all, everyone
 agreed that Odongo and Apiyo
 had a wonderful grandmother!
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Odongo na Apiyo waliporudi shuleni, waliwasimulia marafiki zao kuhusu maisha ya kijijini. Baadhi ya watoto waliamini kuwa maisha ya mjini ni mazuri. Wengine waliamini kijijini ni bora zaidi. Lakini zaidi ya yote, kila mmoja alikubali kwamba Odongo na Apiyo walikuwa na bibi wa kipekee.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text20" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
@@ -742,8 +745,8 @@ had a wonderful grandmother!
 		<button class="btn btn-lg" id="playbutton21" onclick="playpause('21')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('fr','sw')" class="btn btn-lg lang-sw" title="Switch between French and Swahili">sw</button>
-		<button onclick="switchlang('fr','en')" class="btn btn-lg lang-en" title="Switch between French and English">en</button>
+		<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
+		<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 	</div>
 </div>
 

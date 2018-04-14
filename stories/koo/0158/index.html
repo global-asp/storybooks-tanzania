@@ -60,12 +60,14 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0158/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">W'ankoko na W'isamba</span>
-<span class="en">Hen and Eagle</span>
-<span class="sw">Kuku na Tai</span>
+			<span class="l1">Hen and Eagle</span>
+			<span class="l2">Kuku na Tai</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton" onclick="playpause('')" title="Play/pause"><i class="icon-volume-up"></i></button>
+				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
 				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/01.mp3"></audio>
+				<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+				<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 			</div>
 		</h1>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-tanzania/css/pencil.svg" alt="Written by" width="38px"></span> Ann Nduku</h3>
@@ -73,7 +75,8 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-tanzania/css/global.svg" alt="Translated by" width="38px"></span> Amos Mubunga Kambere</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-tanzania/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-tanzania/stories/koo">Lukhonzo</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-tanzania/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-tanzania/stories/koo/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/koo/0158/koo-0158_.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/koo/0158/koo-0158_hen.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -84,25 +87,25 @@
 	Kera kera, iya wankoko na w'samba babya banywani. Kandi babya bikere n'obuholho nebindi binyonyi.  Aliriryo wankoko n'awisamba sibyabya byasi eriwulhuka.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Hapo zamani za kale, Kuku na Tai walikuwa marafiki. Waliishi kwa amani na ndege wengine. Hakuna kati yao aliyeweza kupaa.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Once upon a time, Hen and
 Eagle were friends. They lived
 in peace with all the other birds.
 None of them could fly.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Hapo zamani za kale, Kuku na Tai walikuwa marafiki. Waliishi kwa amani na ndege wengine. Hakuna kati yao aliyeweza kupaa.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/02.mp3"></audio>
+		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
@@ -115,7 +118,10 @@ None of them could fly.
 	Kiro kighuma, enzalha muyawa omwakihugho.  W'isamba inyakaghenda lhughendo lhuli erirondia akalyo.  Erisamba irikasubulha iryabirilhuha. "Nikwa ibwa hanatholere ihabya enzira eyirghenderamu" Isamba mwalengekania.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Kuna siku njaa ilitokea. Ikamlazimu Tai kutembea umbali mrefu kutafuta chakula. Alirudi akiwa amechoka sana. "Lazima kuwe na njia rahisi ya kusafiri!" Tai alisema.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	One day, there was famine in
 the land. Eagle had to walk very
 far to find food. She came back
@@ -123,19 +129,16 @@ very tired.
 "There must be an easier way
 to travel!" said Eagle.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Kuna siku njaa ilitokea. Ikamlazimu Tai kutembea umbali mrefu kutafuta chakula. Alirudi akiwa amechoka sana. "Lazima kuwe na njia rahisi ya kusafiri!" Tai alisema.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/03.mp3"></audio>
+		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
@@ -148,7 +151,10 @@ to travel!" said Eagle.
 	Wankoko abere akabuka amasa nekihanulho.  Amatsuka erisorokya ebeya ebikathoghonga okwasindi nyonyi.  Neryo amabwirasyo ati, "tulhandikanaye ebyeya  neribiwatikania okwabyetu" wankoko amahanulha, "obundi byanganaleka itwa wulhuka"
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Baada ya usingizi mnono wa usiku, Kuku alijiwa na wazo zuri sana. Akaanza kukusanya manyoya yaliyodondoka kutoka kwa ndege wenzao. "Tuyashonee haya manyoya juu ya manyoya yetu," Kuku alisema. "Labda itaturahisishia kusafiri."
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	After a good night's sleep, Hen
 had a brilliant idea. She began
 collecting the fallen feathers
@@ -158,19 +164,16 @@ of our own feathers," she said.
 "Perhaps that will make it easier
 to travel."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Baada ya usingizi mnono wa usiku, Kuku alijiwa na wazo zuri sana. Akaanza kukusanya manyoya yaliyodondoka kutoka kwa ndege wenzao. "Tuyashonee haya manyoya juu ya manyoya yetu," Kuku alisema. "Labda itaturahisishia kusafiri."
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/04.mp3"></audio>
+		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
@@ -183,7 +186,10 @@ to travel."
 	Erisamba lyeryanabya liwite enginzo eyikalhanda, neryo lyamatsuka eriyirandira kwebyeya.  W'isamba mwayikolhera ebipupa bibiri ebiwene, neryo amawulhuka omwamwanya hali.  W'ankoko nayo neryo amayibweka enginzo neryo amatsuka erilhanda, ibwa neryo amalhuha. Wankoko amasingha enginzo yokwa kabanda akatibitha omwa jokoni eriyahukira otwana twiwe.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Tai pekee ndiye aliyekuwa na sindano kijijini, kwa hiyo akaanza kushona wa kwanza. Akajitengenezea mabawa mawili mazuri na akapaa juu ya kuku. Kuku aliazima sindano lakini akachoka kushona baada ya muda mfupi. Akaacha sindano kabatini na akaenda jikoni kuandaa chakula kwa ajili ya watoto wake.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Eagle was the only one in the
 village with a needle, so she
 started sewing first.
@@ -197,19 +203,16 @@ cupboard and went into the
 kitchen to prepare food for her
 children.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Tai pekee ndiye aliyekuwa na sindano kijijini, kwa hiyo akaanza kushona wa kwanza. Akajitengenezea mabawa mawili mazuri na akapaa juu ya kuku. Kuku aliazima sindano lakini akachoka kushona baada ya muda mfupi. Akaacha sindano kabatini na akaenda jikoni kuandaa chakula kwa ajili ya watoto wake.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/05.mp3"></audio>
+		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
@@ -222,7 +225,10 @@ children.
 	Ebindi binyonyi byabere byalangire iya W'isamba akawulhuka omwamwanya, mubyasaba W'ankoko yenginzo nabyo byangayikolera ebipupa.  Neryo katuku kake, enbinyonyi byamatsuka erisulha omwamwanya neriwulhuka.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Lakini ndege wengine walimwona Tai akipaa. Wakamwomba Kuku awaazime sindano ili nao wajishonee mabawa pia. Muda si mrefu ndege wakawa wamepaa na kuzagaa anga zima.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	But the other birds had seen
 Eagle flying away. They asked
 Hen to lend them the needle to
@@ -230,19 +236,16 @@ make wings for themselves too.
 Soon there were birds flying all
 over the sky.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Lakini ndege wengine walimwona Tai akipaa. Wakamwomba Kuku awaazime sindano ili nao wajishonee mabawa pia. Muda si mrefu ndege wakawa wamepaa na kuzagaa anga zima.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/06.mp3"></audio>
+		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
@@ -255,7 +258,10 @@ over the sky.
 	Neryo enyonyi eyawunzerera erilhanda yabere yikasubulya enginzo, muyitasangana W'ankoko yahakuhi.  Muyasighira enginzo y'obwana bwe w'ankoko.  Neryo bwamatsuka erisatha omwanginzo, bwebere bwalhuha erisatha, bwamasighayo omwamusenyi.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Ndege wa mwisho aliporudisha sindano aliyoazima, Kuku hakuwepo. Kwa hiyo watoto wake wakachukua sindano na wakaanza kuichezea. Walipochoka na mchezo wao, wakaiacha sindano kwenye mchanga.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	When the last bird returned the
 borrowed needle, Hen was not
 there. So her children took the
@@ -265,19 +271,16 @@ When they got tired of the
 game, they left the needle in
 the sand.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Ndege wa mwisho aliporudisha sindano aliyoazima, Kuku hakuwepo. Kwa hiyo watoto wake wakachukua sindano na wakaanza kuichezea. Walipochoka na mchezo wao, wakaiacha sindano kwenye mchanga.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/07.mp3"></audio>
+		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
@@ -290,7 +293,10 @@ the sand.
 	Omwitungi, W'isamba amasubulha.  Amasaba enginzo yiwe akatasyalhanda neribazirira ebyeya biwe ebyabya ibirimusunukalha habwo olhughendo lhuli. W'ankoko mwalebya okwa kabanda ahababya bakabikayo, siyiriho! Amalebye omwajokoni, siyiriyo, amalebya n'omwabalanzi, namo yamabya isiyirimo.  Enginzo neryo yamabulirana.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Baadaye jioni Tai akarudi. Akaomba sindano ili aweze kushona baadhi ya manyoya yaliyokuwa yameanza kulegea alipokuwa safarini. Akaangalia kwenye kabati. Akaangalia jikoni. Akaangalia uani. Ila sindano haikupatikana.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	Later that afternoon, Eagle
 returned. She asked for the
 needle to fix some feathers that
@@ -301,19 +307,16 @@ looked in the yard. But the
 needle was nowhere to be
 found.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Baadaye jioni Tai akarudi. Akaomba sindano ili aweze kushona baadhi ya manyoya yaliyokuwa yameanza kulegea alipokuwa safarini. Akaangalia kwenye kabati. Akaangalia jikoni. Akaangalia uani. Ila sindano haikupatikana.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/08.mp3"></audio>
+		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
@@ -326,7 +329,10 @@ found.
 	"Tasamba kiro kiwuma" W'ankoko akayisengerezeya Erisamba. Ngendibanayo neryo wangabazirira ebyeya byaghu neriyarondia ebindi byalya.  "Kale basi, kiro kiwuma kisa", W'isamba amaligha.  "Wamabirilemwa iribana enginzo yaghe, ukendimbererya kawuma okwatwana twaghu mwandihi yenginzo yaghe.  Sihali kabusa.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	"Nipatie siku moja," Kuku alimwomba Tai. "Halafu utaweza kushona bawa lako na kuruka tena kwenda kutafuta chakula." "Siku moja tu," alisema Tai. "Kama hutaipata sindano, itabidi unipe kimoja cha vifaranga vyako kama malipo."
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	"Just give me a day," Hen
 begged Eagle. "Then you can
 fix your wing and fly away to
@@ -336,19 +342,16 @@ get food again."
 you'll have to give me one of
 your chicks as payment."
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	"Nipatie siku moja," Kuku alimwomba Tai. "Halafu utaweza kushona bawa lako na kuruka tena kwenda kutafuta chakula." "Siku moja tu," alisema Tai. "Kama hutaipata sindano, itabidi unipe kimoja cha vifaranga vyako kama malipo."
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/09.mp3"></audio>
+		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
@@ -361,7 +364,10 @@ your chicks as payment."
 	W'isamba abere akasubulha ekiro kyakabiri, akasangana W'ankoko inyanemukwesa omusenyi akarondia enginzo.  Neryo enginzo muyitabanika.  W'isamba mwawulhuka neriyabakulha akana kawuma okwatwana tw'enkoko.  Neryo kyalekire bulikiro erisamba likabya likabanika ahali esyankoko, sikasangawa isinemukwesa sikarondia enginzo yabene.
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Tai aliporudi siku iliyofuata, alimkuta Kuku akichakura mchangani, ila hakukuwa na sindano. Kwa hiyo Tai alishuka kwa kasi na kukwapua kifaranga kimoja. Akaondoka nacho. Tangu hapo, kila Tai anapojitokeza humkuta Kuku akichakura kwenye mchanga akitafuta sindano.
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	When Eagle came the next day,
 she found Hen scratching in the
 sand, but no needle.
@@ -373,19 +379,16 @@ Eagle appears, she finds Hen
 scratching in the sand for the
 needle.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Tai aliporudi siku iliyofuata, alimkuta Kuku akichakura mchangani, ila hakukuwa na sindano. Kwa hiyo Tai alishuka kwa kasi na kukwapua kifaranga kimoja. Akaondoka nacho. Tangu hapo, kila Tai anapojitokeza humkuta Kuku akichakura kwenye mchanga akitafuta sindano.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/10.mp3"></audio>
+		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/koo/0158/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
@@ -398,16 +401,16 @@ needle.
 	W'ankoko akabya akalhangira ekitsutsu kyebipupa bya W'isamba, neryo yikapwirira otwana twayo, tubisame omwabithi kusangwa Isamba akendituheka.  Otwana nato tikabugha tuthi, "nethu situli bachiru, tukenditibitha".
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 en"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
+	Kila kivuli cha mabawa ya Tai kinapoonekana ardhini, Kuku huwatahadharisha vifaranga vyake. "Tokeni kwenye eneo la wazi." Na wanajibu: "Sisi si wajinga. Tutakimbia."
+	</h3></div>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	As the shadow of Eagle's wing
 falls on the ground, Hen warns
 her chicks. "Get out of the bare
 and dry land."
 And they respond:
 "We are not fools. We will run."
-	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 sw"><h3>
-	Kila kivuli cha mabawa ya Tai kinapoonekana ardhini, Kuku huwatahadharisha vifaranga vyake. "Tokeni kwenye eneo la wazi." Na wanajibu: "Sisi si wajinga. Tutakimbia."
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
@@ -417,8 +420,8 @@ And they respond:
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('koo','sw')" class="btn btn-lg lang-sw" title="Switch between Lukhonzo and Swahili">sw</button>
-		<button onclick="switchlang('koo','en')" class="btn btn-lg lang-en" title="Switch between Lukhonzo and English">en</button>
+		<button onclick="switchlang('koo,sw','sw,en,koo')" class="btn btn-lg lang-primary" title="Switch between Lukhonzo and Swahili">sw</button>
+		<button onclick="switchlang('koo,en','sw,en,koo')" class="btn btn-lg lang-secondary" title="Switch between Lukhonzo and English">en</button>
 	</div>
 </div>
 
