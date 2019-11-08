@@ -16,13 +16,17 @@
 	<meta name="description" content="Storybooks Tanzania is designed specifically for teachers, parents, and community members and makes 40 stories from the African Storybook available with text and audio in Swahili and English, as well as the most widely spoken languages of Tanzania.
 ">
 	<link rel="stylesheet" href="/storybooks-tanzania/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-tanzania/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-tanzania/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-tanzania/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-tanzania/stories/fr/0110/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Tanzania" href="/storybooks-tanzania">
 	<script src="/storybooks-tanzania/js/sbc.js"></script>
 </head>
 
+
   <body>
+
 
     <div class="container">
 
@@ -74,18 +78,18 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fr/0110/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-tanzania/audio/fr/0110/mp3/01.mp3"></audio>
 			<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
 			<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-tanzania/css/pencil.svg" alt="Written by"></span> Nicola Rijsdijk</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-tanzania/css/art.svg" alt="Illustrated by"></span> Maya Marshak</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-tanzania/css/global.svg" alt="Translated by"></span> Boulanger Mirei, Translators without Borders</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-tanzania/css/language.svg" alt="Language"></span> <a href="/storybooks-tanzania/stories/fr">French</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-tanzania/css/level.svg" alt="Level"></span> <a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fr/0110/fr-0110_wangari.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/pencil.svg" alt="Written by"></span> Nicola Rijsdijk</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/art.svg" alt="Illustrated by"></span> Maya Marshak</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/global.svg" alt="Translated by"></span> Boulanger Mirei, Translators without Borders</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by"></span> Monique Bournot-Trites</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/language.svg" alt="Language"></span> <a href="/storybooks-tanzania/stories/fr">French</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/level.svg" alt="Level"></span> <a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="/0110/fr-0110_wangari.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -93,8 +97,7 @@
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Dans un village situé sur les flancs du Mont Kenya en Afrique de l’Est, une petite fille
-travaillait dans les champs avec sa mère. Son nom était Wangari.
+	Dans un village situé sur les flancs du Mont Kenya en Afrique de l’Est, une petite fille travaillait dans les champs avec sa mère. Son nom était Wangari.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -122,8 +125,7 @@ travaillait dans les champs avec sa mère. Son nom était Wangari.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Wangari aimait beaucoup être dehors. Dans le potager de sa famille, elle faisait des trous
-dans le sol avec sa machette. Elle enfouissait des petites graines dans la terre chaude.
+	Wangari aimait beaucoup être dehors. Dans le potager de sa famille, elle faisait des trous dans le sol avec sa machette. Elle enfouissait des petites graines dans la terre chaude.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -151,9 +153,7 @@ dans le sol avec sa machette. Elle enfouissait des petites graines dans la terre
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Son moment favori de la journée était juste après le coucher du soleil. Quand il faisait trop
-nuit pour voir les plantes, Wangari savait qu’il était l’heure de rentrer à la maison. Pour
-rentrer, elle devait suivre des sentiers étroits à travers champs et traverser des rivières.
+	Son moment préféré de la journée était juste après le coucher du soleil. Quand il faisait trop nuit pour voir les plantes, Wangari savait qu’il était l’heure de rentrer à la maison. Pour rentrer, elle devait suivre des sentiers étroits à travers champs et traverser des rivières.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -183,9 +183,7 @@ She would follow the narrow paths through the fields, crossing rivers as she wen
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Wangari était une enfant intelligente et ne pouvait plus attendre pour aller à l’école. Mais
-sa mère et son père voulaient qu’elle reste à la maison pour les aider.
-Quand elle eut sept ans, son grand frère persuada ses parents de la laisser aller à l’école.
+	Wangari était une enfant intelligente et avait hâte d’aller à l’école. Mais sa mère et son père voulaient qu’elle reste à la maison pour les aider. Quand elle eut sept ans, son grand frère persuada ses parents de la laisser aller à l’école.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -215,10 +213,7 @@ When she was seven years old, her big brother persuaded her parents to let her g
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Elle aimait apprendre&nbsp;!
-Wangari apprenait de plus en plus avec chaque livre qu’elle lisait.
-Elle travaillait si bien à l’école qu’elle fut invitée à étudier aux Etats Unis d’Amérique.
-Wangari était enthousiaste&nbsp;! Elle voulait en savoir plus sur le monde.
+	Elle aimait apprendre&nbsp;! Wangari apprenait de plus en plus avec chaque livre qu’elle lisait. Elle travaillait si bien à l’école qu’elle fut invitée à étudier aux Etats Unis d’Amérique. Wangari était enthousiaste&nbsp;! Elle voulait en savoir plus sur le monde.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -248,9 +243,7 @@ Wangari was excited! She wanted to know more about the world.
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	A l’université américaine, Wangari apprit plein de nouvelles choses. Elle étudia les plantes
-et la manière dont elles grandissent. Et elle se rappela comment elle avait grandi&nbsp;: en
-jouant avec ses frères à l’ombre des arbres dans les magnifiques forêts du Kenya.
+	A l’université américaine, Wangari apprit beaucoup de choses nouvelles. Elle étudia les plantes et la manière dont elles grandissent. Et elle se rappela comment elle avait grandi&nbsp;: en jouant avec ses frères à l’ombre des arbres dans les magnifiques forêts du Kenya.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -278,9 +271,7 @@ jouant avec ses frères à l’ombre des arbres dans les magnifiques forêts du 
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Plus elle apprenait, plus elle réalisait qu’elle aimait les habitants du Kenya. Elle voulait
-qu’ils soient heureux et libres.
-Plus elle apprenait, plus elle se rappelait son foyer africain.
+	Plus elle apprenait, plus elle réalisait qu’elle aimait les habitants du Kenya. Elle voulait qu’ils soient heureux et libres. Plus elle apprenait, plus elle se rappelait son foyer africain.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -310,10 +301,7 @@ The more she learnt, the more she remembered her African home.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Quand elle eut terminé ses études, elle retourna au Kenya. Mais son pays avait changé. De
-larges fermes s’étendaient à travers la campagne.
-Les femmes n’avaient plus de bois pour cuire les aliments. Les gens étaient pauvres et les
-enfants avaient toujours faim.
+	Quand elle eut terminé ses études, elle retourna au Kenya. Mais son pays avait changé. De larges fermes s’étendaient à travers la campagne. Les femmes n’avaient plus de bois pour cuire les aliments. Les gens étaient pauvres et les enfants avaient toujours faim.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -341,10 +329,7 @@ enfants avaient toujours faim.
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Wangari savait ce qu’il fallait faire. Elle apprit aux femmes comment planter des arbres en
-utilisant des graines. Les femmes vendirent les arbres et utilisèrent l’argent pour faire vivre
-leurs familles. Les femmes étaient très heureuses. Wangari les avait aidées à se sentir
-puissantes et fortes.
+	Wangari savait ce qu’il fallait faire. Elle apprit aux femmes comment planter des arbres en utilisant des graines. Les femmes vendirent les arbres et utilisèrent l’argent pour faire vivre leurs familles. Les femmes étaient très heureuses. Wangari les avait aidées à se sentir puissantes et fortes.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -372,9 +357,7 @@ puissantes et fortes.
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Avec le temps, les nouveaux arbres se transformèrent en forêts, et les rivières
-recommencèrent à couler. Le message de Wangari traversa toute l’Afrique. Aujourd’hui des
-millions d’arbres ont grandi grâce aux graines de Wangari.
+	Avec le temps, les nouveaux arbres se transformèrent en forêts, et les rivières recommencèrent à couler. Le message de Wangari traversa toute l’Afrique. Aujourd’hui des millions d’arbres ont grandi grâce aux graines de Wangari.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -402,12 +385,7 @@ millions d’arbres ont grandi grâce aux graines de Wangari.
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Wangari avait travaillé dur. Partout
-dans le monde, les gens s’en
-aperçurent et lui donnèrent un prix
-renommé. Il s’appelle le Prix Nobel
-de la Paix et elle fut la première
-femme africaine à le recevoir.
+	Wangari avait travaillé dur. Partout dans le monde, les gens s’en aperçurent et lui donnèrent un prix renommé. Il s’appelle le Prix Nobel de la Paix et elle fut la première femme africaine à le recevoir.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -435,8 +413,7 @@ femme africaine à le recevoir.
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0110/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Wangari mourut en 2011 mais nous pensons à elle chaque fois que nous voyons un bel
-arbre.
+	Wangari mourut en 2011 mais nous pensons à elle à chaque fois que nous voyons un bel arbre.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -466,7 +443,7 @@ arbre.
 		<h5>Written by: Nicola Rijsdijk</h5>
 		<h5>Illustrated by: Maya Marshak</h5>
 		<h5>Translated by: Boulanger Mirei, Translators without Borders</h5>
-		<h5>Read by: Alexandra Danahy</h5>
+		<h5>Read by: Monique Bournot-Trites</h5>
 		<h5>Language: <a href="/storybooks-tanzania/stories/fr">French</a></h5>
 		<h5><a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h5>
 		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=9809" target="_blank">A Tiny Seed: The Story of Wangari Maathai</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
@@ -481,7 +458,7 @@ arbre.
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0201/">L’enfant-âne</a></label>
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0315/">La chanson de Sakima</a></label>
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0006/">Anansi et la sagesse</a></label>
-			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0324/">Le jour que je quitta la maison pour la ville</a></label>
+			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0324/">Le jour où je quittai la maison pour la ville</a></label>
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0158/">Poule et Aigle</a></label>
 	</div>
 </div>
@@ -490,6 +467,8 @@ arbre.
 	<a class="btn btn-lg" href="/storybooks-tanzania/stories/fr" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
 <br><br>
 </div>
+
+
 
     </div>
 

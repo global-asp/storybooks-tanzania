@@ -16,13 +16,17 @@
 	<meta name="description" content="Storybooks Tanzania is designed specifically for teachers, parents, and community members and makes 40 stories from the African Storybook available with text and audio in Swahili and English, as well as the most widely spoken languages of Tanzania.
 ">
 	<link rel="stylesheet" href="/storybooks-tanzania/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-tanzania/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-tanzania/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-tanzania/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-tanzania/stories/fr/0006/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Tanzania" href="/storybooks-tanzania">
 	<script src="/storybooks-tanzania/js/sbc.js"></script>
 </head>
 
+
   <body>
+
 
     <div class="container">
 
@@ -74,18 +78,18 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fr/0006/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-tanzania/audio/fr/0006/mp3/01.mp3"></audio>
 			<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
 			<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-tanzania/css/pencil.svg" alt="Written by"></span> Ghanaian folktale</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-tanzania/css/art.svg" alt="Illustrated by"></span> Wiehan de Jager</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-tanzania/css/global.svg" alt="Translated by"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-tanzania/css/language.svg" alt="Language"></span> <a href="/storybooks-tanzania/stories/fr">French</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-tanzania/css/level.svg" alt="Level"></span> <a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fr/0006/fr-0006_anansi.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/pencil.svg" alt="Written by"></span> Ghanaian folktale</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/art.svg" alt="Illustrated by"></span> Wiehan de Jager</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/global.svg" alt="Translated by"></span> Alexandra Danahy</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by"></span> Monique Bournot-Trites</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/language.svg" alt="Language"></span> <a href="/storybooks-tanzania/stories/fr">French</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/level.svg" alt="Level"></span> <a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="/0006/fr-0006_anansi.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -93,7 +97,7 @@
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Il y a longtemps, les gens ne savaient rien. Ils ne savaient pas comment faire une récolte, ou comment tisser, ou comment fabriquer des outils de fer. Le dieu Nyame dans le ciel avait toute la sagesse dans le monde. Il la gardait en sécurité dans un pot en argile.
+	Il y a longtemps, les gens ne savaient rien. Ils ne savaient pas comment ensemmencer et cultiver leurs champs, ou comment tisser, ou comment fabriquer des outils de fer. Le dieu Nyame dans le ciel avait toute la sagesse du monde. Il la gardait en sécurité dans un pot en argile.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -128,7 +132,7 @@ He kept it safe in a clay pot.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Un jour, Nyame décida qu’il donnerait le pot de sagesse à Anansi. Chaque fois qu’Anansi regardait dans le pot en argile, il apprenait quelque chose de nouveau. C’était tellement excitant&nbsp;!
+	Un jour, Nyame décida qu’il donnerait le pot de la sagesse à Anansi. Chaque fois qu’Anansi regardait dans le pot en argile, il apprenait quelque chose de nouveau. C’était tellement excitant&nbsp;!
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -161,7 +165,7 @@ new. It was so exciting!
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Anansi l’avide pensa, «&nbsp;Je vais garder le pot en sécurité en haut d’un grand arbre. Comme ça je pourrai l’avoir à moi seul&nbsp;!&nbsp;» Il fila un fil long, l’enroula autour du pot en argile et l’attacha à son estomac. Il commença à grimper l’arbre. Mais c’était difficile de grimper l’arbre avec le pot qui le cognait dans les genoux tout le temps.
+	Anansi, l’avide, pensa: «&nbsp;Je vais garder le pot en sécurité en haut d’un grand arbre. Comme ça je pourrai l’avoir à moi seul&nbsp;!&nbsp;» Il fila un fil long, l’enroula autour du pot en argile et l’attacha à son estomac. Il commença à grimper à l’arbre. Mais c’était difficile de grimper à l’arbre avec le pot qui lui cognait les genoux tout le temps.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -199,7 +203,7 @@ knees all the time.
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Tout le long, le jeune fils d’Anansi avait été debout en bas de l’arbre en train de regarder. «&nbsp;Ne serait-il pas plus facile d’attacher le pot à ton dos plutôt&nbsp;?&nbsp;» Anansi essaya d’attacher le pot rempli de sagesse à son dos et ce fut vraiment plus facile.
+	Pendant tout ce temps, le jeune fils d’Anansi était debout en bas de l’arbre en train de regarder. «&nbsp;Au lieu de faire ceci, ne serait-il pas plus facile d’attacher le pot à ton dos&nbsp;?&nbsp;» Anansi essaya d’attacher le pot rempli de sagesse à son dos et ce fut vraiment plus facile.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -235,7 +239,7 @@ really was a lot easier.
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Dans peu de temps il atteignit le sommet de l’arbre. Mais il arrêta et pensa, «&nbsp;Je suis supposé être celui avec toute la sagesse et voici que mon fils fut plus sage que moi&nbsp;!&nbsp;» Anansi était tellement fâché à propos de ceci qu’il lança le pot en argile en bas de l’arbre.
+	En peu de temps il atteignit le sommet de l’arbre. Mais il arrêta et pensa, «&nbsp;Je suis censé être celui qui a toute la sagesse et voici que mon fils est plus sage que moi&nbsp;!&nbsp;» Anansi était tellement fâché à propos de ceci qu’il lança le pot en argile en bas de l’arbre.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -272,7 +276,7 @@ out of the tree.
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0006/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Le pot cassa en mille morceaux sur le sol. La sagesse fut disponible pour tous à partager. Et c’est ainsi que les gens apprirent à cultiver, tisser, fabriquer des outils de fer, et toutes les autres choses que les gens savent comment faire.
+	Le pot se cassa en mille morceaux sur le sol. La sagesse fut accessible à tous. Et c’est ainsi que les gens apprirent à cultiver, tisser, fabriquer des outils de fer, et toutes les autres choses que les gens savent faire.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -310,7 +314,7 @@ how to do.
 		<h5>Written by: Ghanaian folktale</h5>
 		<h5>Illustrated by: Wiehan de Jager</h5>
 		<h5>Translated by: Alexandra Danahy</h5>
-		<h5>Read by: Alexandra Danahy</h5>
+		<h5>Read by: Monique Bournot-Trites</h5>
 		<h5>Language: <a href="/storybooks-tanzania/stories/fr">French</a></h5>
 		<h5><a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h5>
 		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=1938" target="_blank">Anansi and Wisdom</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
@@ -325,7 +329,7 @@ how to do.
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0141/">La poule et le millepatte</a></label>
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0201/">L’enfant-âne</a></label>
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0315/">La chanson de Sakima</a></label>
-			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0324/">Le jour que je quitta la maison pour la ville</a></label>
+			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0324/">Le jour où je quittai la maison pour la ville</a></label>
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0158/">Poule et Aigle</a></label>
 	</div>
 </div>
@@ -334,6 +338,8 @@ how to do.
 	<a class="btn btn-lg" href="/storybooks-tanzania/stories/fr" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
 <br><br>
 </div>
+
+
 
     </div>
 

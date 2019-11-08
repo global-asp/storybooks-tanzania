@@ -16,13 +16,17 @@
 	<meta name="description" content="Storybooks Tanzania is designed specifically for teachers, parents, and community members and makes 40 stories from the African Storybook available with text and audio in Swahili and English, as well as the most widely spoken languages of Tanzania.
 ">
 	<link rel="stylesheet" href="/storybooks-tanzania/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-tanzania/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-tanzania/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-tanzania/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-tanzania/stories/fr/0315/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Tanzania" href="/storybooks-tanzania">
 	<script src="/storybooks-tanzania/js/sbc.js"></script>
 </head>
 
+
   <body>
+
 
     <div class="container">
 
@@ -74,18 +78,18 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fr/0315/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-tanzania/audio/fr/0315/mp3/01.mp3"></audio>
 			<button onclick="switchlang('fr,sw','sw,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Swahili">sw</button>
 			<button onclick="switchlang('fr,en','sw,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-tanzania/css/pencil.svg" alt="Written by"></span> Ursula Nafula</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-tanzania/css/art.svg" alt="Illustrated by"></span> Peris Wachuka</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-tanzania/css/global.svg" alt="Translated by"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-tanzania/css/language.svg" alt="Language"></span> <a href="/storybooks-tanzania/stories/fr">French</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-tanzania/css/level.svg" alt="Level"></span> <a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fr/0315/fr-0315_sakima.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/pencil.svg" alt="Written by"></span> Ursula Nafula</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/art.svg" alt="Illustrated by"></span> Peris Wachuka</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/global.svg" alt="Translated by"></span> Alexandra Danahy</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/megaphone.svg" alt="Read by"></span> Monique Bournot-Trites</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/language.svg" alt="Language"></span> <a href="/storybooks-tanzania/stories/fr">French</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/level.svg" alt="Level"></span> <a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="/0315/fr-0315_sakima.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -125,7 +129,7 @@ Their grass-thatched hut was at the end of a row of trees.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Quand Sakima avait trois ans, il est devenu malade et perdu sa vue. Sakima était un garçon avec beaucoup de talent.
+	Quand Sakima avait trois ans, il est tombé malade et a perdu la vue. Sakima était un garçon avec beaucoup de talent.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -185,7 +189,7 @@ For example, he could sit with older members of the village and discuss importan
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Les parents de Sakima travaillaient chez l’homme riche. Ils quittaient leur maison tôt le matin et revenaient tard le soir. Sakima restaient seul chez eux avec sa petite sœur.
+	Les parents de Sakima travaillaient chez l’homme riche. Ils quittaient leur maison tôt le matin et revenaient tard le soir. Sakima restait seul chez eux avec sa petite sœur.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -307,7 +311,7 @@ She would sway to the soothing tune.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	«&nbsp;Peux-tu la chanter encore et encore, Sakima?&nbsp;» sa sœur le suppliait. Sakima acceptait et la chantait encore et encore.
+	«&nbsp;Peux-tu la chanter encore et encore, Sakima?&nbsp;» le suppliait sa sœur. Sakima acceptait et la chantait encore et encore.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -367,7 +371,7 @@ Sakima knew that there was something wrong.
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	«&nbsp;Qu’est-ce qu’il y a, maman et papa?&nbsp;» Sakima demanda. Sakima apprit que le fils de l’homme riche était disparu. L’homme était très triste et seul.
+	«&nbsp;Qu’est-ce qu’il y a, maman et papa?&nbsp;» Sakima demanda. Sakima apprit que le fils de l’homme riche avait disparu. L’homme était très triste et seul.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -399,7 +403,7 @@ The man was very sad and lonely.
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	«&nbsp;Je peux chanter pour lui. Il redeviendra peut-être heureux,&nbsp;» Sakima dit à ses parents. Mes ses parents rejetèrent l’idée. «&nbsp;Il est très riche. Tu es seulement un garçon aveugle. Penses-tu vraiment que ta chanson l’aidera?&nbsp;»
+	«&nbsp;Je peux chanter pour lui. Il redeviendra peut-être heureux,&nbsp;» dit Sakima à ses parents. Mais ses parents rejetèrent l’idée. «&nbsp;Il est très riche. Tu es seulement un garçon aveugle. Penses-tu vraiment que ta chanson l’aidera?&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -491,7 +495,7 @@ She said, “Sakima’s songs soothe me when I am hungry. They will soothe the r
 <div id="text15" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Il se tint sous une grande fenêtre et commença à chanter sa chanson préférée. Lentement, la tête de l’homme riche apparu à travers la grande fenêtre.
+	Il se tint sous une grande fenêtre et commença à chanter sa chanson préférée. Lentement, la tête de l’homme riche apparu à la grande fenêtre.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -551,7 +555,7 @@ But one man said, “Nobody has been able to console the boss. Does this blind b
 <div id="text17" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	Sakima termina de chanter sa chanson et s’apprêtait à partir. Mais l’homme riche sorti en vitesse et dit, «&nbsp;S’il te plait, chante encore.&nbsp;»
+	Sakima termina de chanter sa chanson et s’apprêtait à partir. Mais l’homme riche sorti en vitesse et dit, «&nbsp;S’il te plaît, chante encore.&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -581,7 +585,7 @@ But the rich man rushed out and said, “Please sing again.”
 <div id="text18" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/18.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	À ce moment, deux hommes sont venus en apportant quelqu’un sur une civière. Ils avaient trouvé le fils de l’homme riche tabassé et abandonné sur le bord de la route.
+	À ce moment, deux hommes sont arrivés en portant quelqu’un sur une civière. Ils avaient trouvé le fils de l’homme riche tabassé et abandonné sur le bord de la route.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -611,7 +615,7 @@ They had found the rich man’s son beaten up and left on the side of the road.
 <div id="text19" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/19.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	L’homme riche fut tellement content de revoir son fils. Il récompensa Sakima pour l’avoir consolé. Il emmena les deux garçons à l’hôpital pour que Sakima puisse retrouver sa vue.
+	L’homme riche fut tellement content de revoir son fils. Il récompensa Sakima de l’avoir consolé. Il emmena les deux garçons à l’hôpital pour que Sakima puisse retrouver la vue.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -645,7 +649,7 @@ He took his son and Sakima to hospital so Sakima could regain his sight.
 		<h5>Written by: Ursula Nafula</h5>
 		<h5>Illustrated by: Peris Wachuka</h5>
 		<h5>Translated by: Alexandra Danahy</h5>
-		<h5>Read by: Alexandra Danahy</h5>
+		<h5>Read by: Monique Bournot-Trites</h5>
 		<h5>Language: <a href="/storybooks-tanzania/stories/fr">French</a></h5>
 		<h5><a href="/storybooks-tanzania/stories/fr/level3">Level 3</a></h5>
 		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=13244" target="_blank">Sakima's song</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
@@ -660,7 +664,7 @@ He took his son and Sakima to hospital so Sakima could regain his sight.
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0141/">La poule et le millepatte</a></label>
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0201/">L’enfant-âne</a></label>
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0006/">Anansi et la sagesse</a></label>
-			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0324/">Le jour que je quitta la maison pour la ville</a></label>
+			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0324/">Le jour où je quittai la maison pour la ville</a></label>
 			<label class="chip"><a href="/storybooks-tanzania/stories/fr/0158/">Poule et Aigle</a></label>
 	</div>
 </div>
@@ -669,6 +673,8 @@ He took his son and Sakima to hospital so Sakima could regain his sight.
 	<a class="btn btn-lg" href="/storybooks-tanzania/stories/fr" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
 <br><br>
 </div>
+
+
 
     </div>
 
