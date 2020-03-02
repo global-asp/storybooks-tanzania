@@ -10,23 +10,20 @@
 	<link rel="manifest" href="/storybooks-tanzania/site.webmanifest?v=4">
 	<link rel="mask-icon" href="/storybooks-tanzania/safari-pinned-tab.svg?v=4" color="#5bbad5">
 	<link rel="shortcut icon" href="/storybooks-tanzania/favicon.ico?v=4">
-	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 	<title>Castigo - Storybooks Tanzania</title>
 	<meta name="description" content="Storybooks Tanzania is designed specifically for teachers, parents, and community members and makes 40 stories from the African Storybook available with text and audio in Swahili and English, as well as the most widely spoken languages of Tanzania.
 ">
 	<link rel="stylesheet" href="/storybooks-tanzania/css/spectre.min.css">
-	<link rel="stylesheet" href="/storybooks-tanzania/css/spectre.min.css">
 	<link rel="stylesheet" href="/storybooks-tanzania/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-tanzania/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-tanzania/stories/pt/0342/">
 	<link rel="alternate" type="application/rss+xml" title="Storybooks Tanzania" href="/storybooks-tanzania">
-	<script src="/storybooks-tanzania/js/sbc.js"></script>
+	<script src="/storybooks-tanzania/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -50,7 +47,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a></div>
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -72,8 +69,8 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1><span class="def">Castigo</span>
-			<span class="l1">Punishment</span>
-			<span class="l2">Adhabu</span>
+			<span class="l1">Adhabu</span>
+			<span class="l2">Punishment</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
@@ -89,12 +86,14 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/language.svg" alt="Language"></span> <a href="/storybooks-tanzania/stories/pt">Portuguese</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/level.svg" alt="Level"></span> <a href="/storybooks-tanzania/stories/pt/level2">Level 2</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-tanzania/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/pt/0342/pt-0342_punishment.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-tanzania/css/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
+
 <hr>
 
-<div id="text02" class="columns">
+        <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
 	Um dia, a mamãe trouxe imensa fruta.
@@ -104,14 +103,13 @@
 	Siku moja, mama alileta matunda mengi.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	One day, mama got a
-lot of fruit.
+	One day, mama got a lot of fruit.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/02.mp3"></audio>
+		<audio id="audio02" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -133,16 +131,15 @@ lot of fruit.
 	“Tutakula matunda lini?” tunauliza. “Tutakula matunda leo jioni,” mama anasema.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	“When can we have
-some fruit?” we ask.
-“We will eat the fruit
-tonight,” says mama.
+	“When can we have some fruit?” we ask.
+
+“We will have the fruit tonight,” says mama.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/03.mp3"></audio>
+		<audio id="audio03" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -166,15 +163,13 @@ Provou a fruta toda e comeu muita fruta.
 	Kaka yangu Rahim ni mlafi. Anaonja onja matunda yote. Anakula matunda mengi.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	My brother Rahim is
-greedy. He tastes all the
-fruit. He eats a lot of it.
+	My brother Rahim is greedy. He tastes all the fruit. He eats a lot of it.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/04.mp3"></audio>
+		<audio id="audio04" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -196,17 +191,15 @@ fruit. He eats a lot of it.
 	“Angalia Rahim alichokifanya!” mdogo wangu analalamika kwa sauti. “Rahim ni mtundu na mchoyo,” ninasema.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	“Look at what Rahim
-did!” shouts my little
-brother. “Rahim is
-naughty and selfish,” I
-say.
+	“Look at what Rahim did!” shouts my little brother.
+
+“Rahim is naughty and selfish,” I say.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/05.mp3"></audio>
+		<audio id="audio05" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -228,14 +221,13 @@ say.
 	Mama amekasirishwa na Rahim.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Mother is angry with
-Rahim.
+	Mother is angry with Rahim.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/06.mp3"></audio>
+		<audio id="audio06" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -259,15 +251,13 @@ Mas o Rahim não se arrependeu.
 	Sisi pia tumekasirishwa na Rahim. Lakini Rahim haombi msamaha.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	We are also angry with
-Rahim. But Rahim is not
-sorry.
+	We are also angry with Rahim. But Rahim is not sorry.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/07.mp3"></audio>
+		<audio id="audio07" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -289,15 +279,13 @@ sorry.
 	“Hutamwadhibu Rahim?” mdogo wangu anauliza.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	“Aren’t you going to
-punish Rahim?” asks
-little brother.
+	“Aren’t you going to punish Rahim?” asks little brother.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/08.mp3"></audio>
+		<audio id="audio08" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -319,14 +307,13 @@ little brother.
 	“Rahim, muda si mrefu utajuta,” mama anaonya.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	“Rahim, soon you will
-be sorry,” warns mama.
+	“Rahim, soon you will be sorry,” warns mama.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/09.mp3"></audio>
+		<audio id="audio09" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -348,14 +335,13 @@ be sorry,” warns mama.
 	Rahim anaanza kuhisi kuumwa.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Rahim starts to feel
-sick.
+	Rahim starts to feel sick.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" onended="resetbutton('10')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/10.mp3"></audio>
+		<audio id="audio10" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -377,14 +363,13 @@ sick.
 	“Tumbo langu linauma sana,” Rahim ananong’ona.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	“My tummy is so sore,”
-whispers Rahim.
+	“My tummy is so sore,” whispers Rahim.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text12" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" onended="resetbutton('11')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/11.mp3"></audio>
+		<audio id="audio11" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -406,15 +391,13 @@ whispers Rahim.
 	Mama alijua hili litatokea. Matunda yanamwadhibu Rahim!
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Mama knew this would
-happen. The fruit is
-punishing Rahim!
+	Mama knew this would happen. The fruit is punishing Rahim!
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text13" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio12" onended="resetbutton('12')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/12.mp3"></audio>
+		<audio id="audio12" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/12.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton12" onclick="playpause('12')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -438,17 +421,15 @@ E nós acreditamos.
 	Baadaye, Rahim anatuomba msamaha. “Kamwe sitakuwa mlafi tena,” anaahidi. Na sote tunamwamini.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
-	Later, Rahim says sorry
-to us. “I will never be so
-greedy again,” he
-promises. And we all
-believe him.
+	Later, Rahim says sorry to us. “I will never be so greedy again,” he promises.
+
+And we all believe him.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
-		<audio id="audio13" onended="resetbutton('13')" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/13.mp3"></audio>
+		<audio id="audio13" src="https://globalstorybooks.net/media/audio/pt/0342/mp3/13.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton13" onclick="playpause('13')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
@@ -460,15 +441,16 @@ believe him.
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Written by: Adelheid Marie Bwire</h5>
-		<h5>Illustrated by: Melany Pietersen</h5>
-		<h5>Translated by: Translators without Borders, Nádia Morais, Priscilla Freitas de Oliveira</h5>
-		<h5>Read by: Alfredo Ferreira</h5>
-		<h5>Language: <a href="/storybooks-tanzania/stories/pt">Portuguese</a></h5>
-		<h5><a href="/storybooks-tanzania/stories/pt/level2">Level 2</a></h5>
-		<h5>Source: <a href="https://africanstorybook.org/reader.php?id=11989" target="_blank">Punishment</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Written by:</span> Adelheid Marie Bwire</h5>
+		<h5><span class="colophon-heading">Illustrated by:</span> Melany Pietersen</h5>
+		<h5><span class="colophon-heading">Translated by:</span> Translators without Borders, Nádia Morais, Priscilla Freitas de Oliveira</h5>
+		<h5><span class="colophon-heading">Read by:</span> Alfredo Ferreira</h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-tanzania/stories/pt">Portuguese</a></h5>
+		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-tanzania/stories/pt/level2">Level 2</a></h5>
+		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=11989" target="_blank">Punishment</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 International License</a>.</div>
 
@@ -489,10 +471,9 @@ believe him.
 </div>
 <div>
 <h5>Options</h5>
-	<a class="btn btn-lg" href="/storybooks-tanzania/stories/pt" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
+	<a class="btn btn-lg" href="/storybooks-tanzania/stories/pt" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
 <br><br>
 </div>
-
 
 
     </div>
